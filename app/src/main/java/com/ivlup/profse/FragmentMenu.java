@@ -40,26 +40,17 @@ public class FragmentMenu extends Fragment {
         // Inflate the layout for this fragment
 
 
-    if(android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.LOLLIPOP) {
-
-
         return inflater.inflate(R.layout.main_menu, container, false);
     }
-    else
 
-
-
-        return inflater.inflate( R.layout.main_menu, container, false);
-
-    }
 
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
         // Setup any handles to view objects here
         // EditText etFoo = (EditText) view.findViewById(R.id.etFoo);
-       //mainGrid = view.findViewById(R.id.menu_grid);
-        Toast.makeText(getContext(), "inflated", Toast.LENGTH_SHORT).show();
-        //setSingleEvent(mainGrid);
+       mainGrid = view.findViewById(R.id.menu_grid);
+
+        setSingleEvent(mainGrid);
 
 
     }

@@ -1,302 +1,278 @@
 <?xml version="1.0" encoding="utf-8"?>
+<GridLayout
+    card_view:cardUseCompatPadding="true"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    android:id="@+id/menu_grid"
+    android:columnCount="2"
+    android:rowCount="4"
+    android:padding="14dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- ROW 1 -->
+
+    <!-- COLUMN 1 -->
+    <android.support.v7.widget.CardView
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:stateListAnimator="@anim/animation"
+        app:cardCornerRadius="8dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:layout_marginBottom="11dp"
+        android:layout_marginRight="11dp"
+        android:layout_marginLeft="11dp"
+        >
+
+        <LinearLayout
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_margin="8dp"
+            android:orientation="vertical"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+
+                android:layout_weight="2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/groupp"/>
+
+            <TextView
+                android:ellipsize="middle"
+                android:gravity="center"
+                style="@android:style/TextAppearance.DeviceDefault"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="@string/header_uslugy_vse"/>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+    <!-- COLUMN 2 -->
+    <android.support.v7.widget.CardView
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:stateListAnimator="@anim/animation"
+        app:cardCornerRadius="8dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:layout_marginBottom="11dp"
+        android:layout_marginRight="11dp"
+        android:layout_marginLeft="11dp"
+        >
+
+        <LinearLayout
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_margin="8dp"
+            android:orientation="vertical"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_weight="2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/jury_ad"/>
+
+            <TextView
+
+                android:ellipsize="middle"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:gravity="center"
+                style="@android:style/TextAppearance.DeviceDefault"
+                android:text="Услуги для юрлиц"/>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
 
 
-        <!-- ROW 1 -->
+    <!-- ROW 2 -->
 
-        <!-- COLUMN 1 -->
-    <GridLayout
+    <!-- COLUMN 1 -->
+    <android.support.v7.widget.CardView
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:stateListAnimator="@anim/animation"
+        app:cardCornerRadius="8dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:layout_marginBottom="11dp"
+        android:layout_marginRight="11dp"
+        android:layout_marginLeft="11dp"
+        >
 
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
-        tools:context=".MainActivity"
-        android:id="@+id/menu_grid"
-        android:columnCount="2"
-        android:rowCount="4"
-        android:alignmentMode="alignMargins"
-        android:columnOrderPreserved="false"
-        android:padding="14dp"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_margin="8dp"
+            android:orientation="vertical"
 
-        <!-- ROW 1 -->
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-        <!-- COLUMN 1 -->
-        <android.support.v7.widget.CardView
-            android:focusable="true"
-            android:foreground="?attr/selectableItemBackground"
-            android:stateListAnimator="@anim/animation"
-            android:clickable="true"
-            android:id="@+id/bt_all"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
-            android:layout_marginBottom="11dp"
-            android:layout_marginRight="11dp"
-            android:layout_marginLeft="11dp"
-            app:cardElevation="8dp"
-            app:cardCornerRadius="8dp"
-            >
+            <ImageView
 
-            <LinearLayout
-                android:layout_gravity="center_horizontal|center_vertical"
-                android:layout_margin="8dp"
-                android:orientation="vertical"
+                android:layout_weight="2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/ad_jur"/>
 
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+            <TextView
+                android:ellipsize="middle"
+                android:gravity="center"
+                style="@android:style/TextAppearance.DeviceDefault"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="Рекламные услуги для юрдиц"/>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+    <!-- COLUMN 2 -->
+    <android.support.v7.widget.CardView
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:stateListAnimator="@anim/animation"
+        app:cardCornerRadius="8dp"
+        card_view:cardUseCompatPadding="true"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:layout_marginBottom="11dp"
+        android:layout_marginRight="11dp"
+        android:layout_marginLeft="11dp"
+        >
 
-                <ImageView
+        <LinearLayout
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_margin="8dp"
+            android:orientation="vertical"
 
-                    android:layout_weight="2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="0dp"
-                    android:layout_gravity="center_horizontal"
-                    android:src="@drawable/groupp"/>
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-                <TextView
-                    android:ellipsize="middle"
-                    android:gravity="center"
-                    style="@android:style/TextAppearance.DeviceDefault"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_weight="1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="0dp"
-                    android:text="@string/header_uslugy_vse"/>
-            </LinearLayout>
-        </android.support.v7.widget.CardView>
-        <!-- COLUMN 2 -->
-        <android.support.v7.widget.CardView
-            android:focusable="true"
-            android:foreground="?attr/selectableItemBackground"
-            android:stateListAnimator="@anim/animation"
-            android:clickable="true"
-            android:id="@+id/bt_ad_phys"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
-            android:layout_marginBottom="11dp"
-            android:layout_marginRight="11dp"
-            android:layout_marginLeft="11dp"
-            app:cardElevation="8dp"
-            app:cardCornerRadius="8dp"
-            >
+            <ImageView
+                android:layout_weight="2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/shipping"/>
 
-            <LinearLayout
-                android:layout_gravity="center_horizontal|center_vertical"
-                android:layout_margin="8dp"
-                android:orientation="vertical"
+            <TextView
 
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                android:ellipsize="middle"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:gravity="center"
+                style="@android:style/TextAppearance.DeviceDefault"
+                android:text="Услуги по доставке"/>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:stateListAnimator="@anim/animation"
+        app:cardCornerRadius="8dp"
+        card_view:cardUseCompatPadding="true"
+        android:id="@+id/bt_all"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:layout_marginBottom="11dp"
+        android:layout_marginRight="11dp"
+        android:layout_marginLeft="11dp"
+        >
 
-                <ImageView
-                    android:layout_weight="2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="0dp"
-                    android:layout_gravity="center_horizontal"
-                    android:src="@drawable/jury_ad"/>
+        <LinearLayout
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_margin="8dp"
+            android:orientation="vertical"
 
-                <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-                    android:ellipsize="middle"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_weight="1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="0dp"
-                    android:gravity="center"
-                    style="@android:style/TextAppearance.DeviceDefault"
-                    android:text="Услуги для юрлиц"/>
-            </LinearLayout>
-        </android.support.v7.widget.CardView>
+            <ImageView
 
+                android:layout_weight="2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/presents"/>
 
-        <!-- ROW 2 -->
+            <TextView
+                android:ellipsize="middle"
+                android:gravity="center"
+                style="@android:style/TextAppearance.DeviceDefault"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="Подарки на заказ"/>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+    <!-- COLUMN 2 -->
+    <android.support.v7.widget.CardView
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:stateListAnimator="@anim/animation"
+        app:cardCornerRadius="8dp"
+        card_view:cardUseCompatPadding="true"
+        android:id="@+id/bt_ad_phys"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:layout_marginBottom="11dp"
+        android:layout_marginRight="11dp"
+        android:layout_marginLeft="11dp"
+        >
 
-        <!-- COLUMN 1 -->
-        <android.support.v7.widget.CardView
-            android:focusable="true"
-            android:foreground="?attr/selectableItemBackground"
-            android:stateListAnimator="@anim/animation"
-            android:clickable="true"
-            android:id="@+id/bt_ship"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
-            android:layout_marginBottom="11dp"
-            android:layout_marginRight="11dp"
-            android:layout_marginLeft="11dp"
-            app:cardElevation="8dp"
-            app:cardCornerRadius="8dp"
-            >
+        <LinearLayout
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_margin="8dp"
+            android:orientation="vertical"
 
-            <LinearLayout
-                android:layout_gravity="center_horizontal|center_vertical"
-                android:layout_margin="8dp"
-                android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+            <ImageView
+                android:layout_weight="2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/presents_here"/>
 
-                <ImageView
-                    android:layout_weight="1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="0dp"
-                    android:layout_gravity="center_horizontal"
-                    android:src="@drawable/ad_jur"/>
+            <TextView
 
-                <TextView
-                    style="@android:style/TextAppearance.DeviceDefault"
-                    android:ellipsize="middle"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_weight="1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="0dp"
-                    android:gravity="center"
-
-                    android:text="@string/header_reklam_uslugy_jur"/>
-            </LinearLayout>
-        </android.support.v7.widget.CardView>
-        <!-- COLUMN 2 -->
-        <android.support.v7.widget.CardView
-            android:focusable="true"
-            android:foreground="?attr/selectableItemBackground"
-            android:stateListAnimator="@anim/animation"
-            android:clickable="true"
-            android:id="@+id/bt_jur"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
-            android:layout_marginBottom="11dp"
-            android:layout_marginRight="11dp"
-            android:layout_marginLeft="11dp"
-            app:cardElevation="8dp"
-            app:cardCornerRadius="8dp"
-            >
-
-            <LinearLayout
-                android:layout_gravity="center_horizontal|center_vertical"
-                android:layout_margin="8dp"
-                android:orientation="vertical"
-
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-
-                <ImageView
-                    android:layout_weight="2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="0dp"
-                    android:layout_gravity="center_horizontal"
-                    android:src="@drawable/shipping"/>
-
-                <TextView
-                    android:ellipsize="middle"
-                    style="@android:style/TextAppearance.DeviceDefault"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_weight="1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="0dp"
-                    android:gravity="center"
-                    android:text="@string/header_uslugy_dostavka"/>
-            </LinearLayout>
-        </android.support.v7.widget.CardView>
-
-        <android.support.v7.widget.CardView
-            android:focusable="true"
-            android:foreground="?attr/selectableItemBackground"
-            android:stateListAnimator="@anim/animation"
-            android:clickable="true"
-            android:id="@+id/bt_ad_jur"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
-            android:layout_marginBottom="11dp"
-            android:layout_marginRight="11dp"
-            android:layout_marginLeft="11dp"
-            app:cardElevation="8dp"
-            app:cardCornerRadius="8dp"
-            >
-
-            <LinearLayout
-                android:layout_gravity="center_horizontal|center_vertical"
-                android:layout_margin="8dp"
-                android:orientation="vertical"
-
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-
-                <ImageView
-                    android:layout_weight="1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="0dp"
-                    android:layout_gravity="center_horizontal"
-                    android:src="@drawable/presents"/>
-
-                <TextView
-                    android:ellipsize="middle"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_weight="1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="0dp"
-                    android:gravity="center"
-
-                    style="@android:style/TextAppearance.DeviceDefault"
-                    android:text="Подарки на заказ"/>
-            </LinearLayout>
-        </android.support.v7.widget.CardView>
-
-        <!-- ROW 3 -->
-
-        <!-- COLUMN 1 -->
-
-        <!-- COLUMN 2 -->
-        <android.support.v7.widget.CardView
-            android:focusable="true"
-            android:foreground="?attr/selectableItemBackground"
-            android:stateListAnimator="@anim/animation"
-            android:clickable="true"
-            android:id="@+id/bt_rules"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
-            android:layout_marginBottom="11dp"
-            android:layout_marginRight="11dp"
-            android:layout_marginLeft="11dp"
-            app:cardElevation="8dp"
-            app:cardCornerRadius="8dp"
-            >
-
-            <LinearLayout
-                android:layout_gravity="center_horizontal|center_vertical"
-                android:layout_margin="8dp"
-                android:orientation="vertical"
-
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-
-                <ImageView
-                    android:layout_weight="1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="0dp"
-                    android:layout_gravity="center_horizontal"
-                    android:src="@drawable/presents_here"/>
-
-                <TextView
-
-                    android:ellipsize="middle"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_weight="1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="0dp"
-                    android:gravity="center"
-                    style="@android:style/TextAppearance.DeviceDefault"
-                    android:text="Правила"/>
-            </LinearLayout>
-        </android.support.v7.widget.CardView>
-    </GridLayout>
+                android:ellipsize="middle"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:gravity="center"
+                style="@android:style/TextAppearance.DeviceDefault"
+                android:text="Правила"/>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</GridLayout>

@@ -94,7 +94,7 @@ public class MainActivity extends AppCompatActivity {
                     FragmentMenu = new FragmentMenu();
                     ft.add(R.id.fragment_container, FragmentMenu, "detail");
                     ft.commit();
-            Toast.makeText(this, "Commit", Toast.LENGTH_SHORT).show();
+
                    // ft.addToBackStack(null);
         //}
 
