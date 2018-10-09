@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -95,6 +96,8 @@ public class ClientListFragment extends Fragment {
 
         //Toast.makeText(getContext(), MainActivity.chosen, Toast.LENGTH_SHORT).show();
         //MainActivity.chosen=
+
+
     }
 
         public  void toClientCard() {

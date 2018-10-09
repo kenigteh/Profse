@@ -46,12 +46,12 @@
                 android:layout_margin="8dp"
                 android:orientation="vertical"
 
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
                 <ImageView
                     android:layout_weight="2"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_gravity="center_horizontal"
                     android:src="@drawable/diagnostics"/>
@@ -90,12 +90,12 @@
                 android:layout_margin="8dp"
                 android:orientation="vertical"
 
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
                 <ImageView
                     android:layout_weight="1.5"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_gravity="center_horizontal"
                     android:src="@drawable/contract"/>
@@ -137,12 +137,12 @@
                 android:layout_margin="8dp"
                 android:orientation="vertical"
 
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
                 <ImageView
                     android:layout_weight="1"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_gravity="center_horizontal"
                     android:src="@drawable/tire"/>
@@ -183,12 +183,12 @@
                 android:layout_margin="8dp"
                 android:orientation="vertical"
 
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
                 <ImageView
                     android:layout_weight="1"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_gravity="center_horizontal"
                     android:src="@drawable/electric_car"/>
@@ -230,12 +230,12 @@
                 android:layout_margin="8dp"
                 android:orientation="vertical"
 
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
                 <ImageView
                     android:layout_weight="0.7"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_gravity="center_horizontal"
                     android:src="@drawable/suspension"/>
@@ -275,12 +275,12 @@
                 android:layout_margin="8dp"
                 android:orientation="vertical"
 
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
                 <ImageView
                     android:layout_weight="1"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_gravity="center_horizontal"
                     android:src="@drawable/sports_car"/>
@@ -366,12 +366,12 @@
                 android:layout_margin="8dp"
                 android:orientation="vertical"
 
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
                 <ImageView
                     android:layout_weight="1.5"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_gravity="center_horizontal"
                     android:src="@drawable/ellipsis"/>

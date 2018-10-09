@@ -44,12 +44,12 @@
                 android:layout_margin="8dp"
                 android:orientation="vertical"
 
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
                 <ImageView
                     android:layout_weight="2"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_gravity="center_horizontal"
                     android:src="@drawable/hoodie"/>
@@ -96,12 +96,12 @@
                 android:layout_margin="8dp"
                 android:orientation="vertical"
 
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
                 <ImageView
                     android:layout_weight="2"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_gravity="center_horizontal"
                     android:src="@drawable/textile"/>
@@ -145,12 +145,12 @@
                 android:layout_margin="8dp"
                 android:orientation="vertical"
 
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
                 <ImageView
                     android:layout_weight="2"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_gravity="center_horizontal"
                     android:src="@drawable/shevrone"/>
@@ -189,12 +189,12 @@
                 android:layout_margin="8dp"
                 android:orientation="vertical"
 
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
                 <ImageView
                     android:layout_weight="2"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_gravity="center_horizontal"
                     android:src="@drawable/corporate"/>

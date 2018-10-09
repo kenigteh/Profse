@@ -44,12 +44,12 @@
                 android:layout_margin="8dp"
                 android:orientation="vertical"
 
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
                 <ImageView
                     android:layout_weight="1"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_gravity="center_horizontal"
                     android:src="@drawable/beauty"/>
@@ -88,12 +88,12 @@
                 android:layout_margin="8dp"
                 android:orientation="vertical"
 
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
                 <ImageView
                     android:layout_weight="1.5"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_gravity="center_horizontal"
                     android:src="@drawable/herbal_spa_treatment_leaves"/>
@@ -135,12 +135,12 @@
                 android:layout_margin="8dp"
                 android:orientation="vertical"
 
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
                 <ImageView
                     android:layout_weight="2"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_gravity="center_horizontal"
                     android:src="@drawable/needle"/>
@@ -181,12 +181,12 @@
                 android:layout_margin="8dp"
                 android:orientation="vertical"
 
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
                 <ImageView
                     android:layout_weight="2"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_gravity="center_horizontal"
                     android:src="@drawable/solarium"/>
@@ -228,12 +228,12 @@
                 android:layout_margin="8dp"
                 android:orientation="vertical"
 
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
                 <ImageView
                     android:layout_weight="2"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_gravity="center_horizontal"
                     android:src="@drawable/relaxing_massage"/>
@@ -273,12 +273,12 @@
                 android:layout_margin="8dp"
                 android:orientation="vertical"
 
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
                 <ImageView
                     android:layout_weight="2"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_gravity="center_horizontal"
                     android:src="@drawable/cream"/>
@@ -320,12 +320,12 @@
                 android:layout_margin="8dp"
                 android:orientation="vertical"
 
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
                 <ImageView
                     android:layout_weight="1.5"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_gravity="center_horizontal"
                     android:src="@drawable/nail_polish"/>
@@ -364,12 +364,12 @@
                 android:layout_margin="8dp"
                 android:orientation="vertical"
 
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
                 <ImageView
                     android:layout_weight="1.5"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_gravity="center_horizontal"
                     android:src="@drawable/ellipsis"/>

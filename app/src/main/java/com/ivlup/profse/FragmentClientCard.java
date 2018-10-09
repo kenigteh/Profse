@@ -7,6 +7,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -48,18 +49,48 @@ public class FragmentClientCard extends Fragment {
 
         TextView cPhone = view.findViewById(R.id.client_phone);
         cPhone.setText(MainActivity.mapClients.get(name).getPhone());
+
         TextView cAddress = view.findViewById(R.id.client_address);
         cAddress.setText(MainActivity.mapClients.get(name).getAddress());
+
         TextView cSite = view.findViewById(R.id.client_site);
         cSite.setText(MainActivity.mapClients.get(name).getSite());
+
         TextView cVk = view.findViewById(R.id.client_vk);
         cVk.setText(MainActivity.mapClients.get(name).getVk());
+
         TextView cTwitter = view.findViewById(R.id.client_twitter);
         cTwitter.setText(MainActivity.mapClients.get(name).getTwitter());
+
         TextView cFacebook = view.findViewById(R.id.client_facebook);
         cFacebook.setText(MainActivity.mapClients.get(name).getFacebook());
+
         TextView cInstagram = view.findViewById(R.id.client_instagram);
         cInstagram.setText(MainActivity.mapClients.get(name).getInstagram());
+
+
+        LinearLayout phone_layout = (LinearLayout) view.findViewById(R.id.number_layout);
+        if (MainActivity.mapClients.get(name).getPhone().isEmpty()) phone_layout.setVisibility(View.INVISIBLE);
+
+        LinearLayout adress_layout = (LinearLayout) view.findViewById(R.id.address_layout);
+        if (MainActivity.mapClients.get(name).getAddress().isEmpty()) adress_layout.setVisibility(View.INVISIBLE);
+
+        LinearLayout site_layout = (LinearLayout) view.findViewById(R.id.site_layout);
+        if (MainActivity.mapClients.get(name).getSite().isEmpty()) site_layout.setVisibility(View.INVISIBLE);
+
+        LinearLayout vk_layout = (LinearLayout) view.findViewById(R.id.vk_layout);
+        if (MainActivity.mapClients.get(name).getVk().isEmpty()) vk_layout.setVisibility(View.INVISIBLE);
+
+        LinearLayout twitter_layout = (LinearLayout) view.findViewById(R.id.twitter_layout);
+        if (MainActivity.mapClients.get(name).getTwitter().isEmpty()) twitter_layout.setVisibility(View.INVISIBLE);
+
+        LinearLayout facebook_layout = (LinearLayout) view.findViewById(R.id.facebook_layout);
+        if (MainActivity.mapClients.get(name).getFacebook().isEmpty()) facebook_layout.setVisibility(View.INVISIBLE);
+
+        LinearLayout instagram_layout = (LinearLayout) view.findViewById(R.id.instagram_layout);
+        if (MainActivity.mapClients.get(name).getInstagram().isEmpty()) instagram_layout.setVisibility(View.INVISIBLE);
+
+
 
     }
 }

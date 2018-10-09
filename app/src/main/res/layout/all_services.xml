@@ -44,12 +44,12 @@
                 android:layout_margin="8dp"
                 android:orientation="vertical"
 
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
                 <ImageView
                     android:layout_weight="2"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_gravity="center_horizontal"
                     android:src="@drawable/beauty"/>
@@ -87,12 +87,12 @@
                 android:layout_margin="8dp"
                 android:orientation="vertical"
 
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
                 <ImageView
                     android:layout_weight="2"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_gravity="center_horizontal"
                     android:src="@drawable/heart"/>
@@ -133,12 +133,12 @@
                 android:layout_margin="8dp"
                 android:orientation="vertical"
 
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
                 <ImageView
                     android:layout_weight="2"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_gravity="center_horizontal"
                     android:src="@drawable/ship"/>
@@ -176,12 +176,12 @@
                 android:layout_margin="8dp"
                 android:orientation="vertical"
 
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
                 <ImageView
                     android:layout_weight="2"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_gravity="center_horizontal"
                     android:src="@drawable/tools"/>
@@ -222,12 +222,12 @@
                 android:layout_margin="8dp"
                 android:orientation="vertical"
 
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
                 <ImageView
                     android:layout_weight="2"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_gravity="center_horizontal"
                     android:src="@drawable/einstein"/>
@@ -265,12 +265,12 @@
                 android:layout_margin="8dp"
                 android:orientation="vertical"
 
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
                 <ImageView
                     android:layout_weight="2"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_gravity="center_horizontal"
                     android:src="@drawable/car"/>
@@ -312,12 +312,12 @@
                 android:layout_margin="8dp"
                 android:orientation="vertical"
 
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
                 <ImageView
                     android:layout_weight="2"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_gravity="center_horizontal"
                     android:src="@drawable/celebration"/>
@@ -355,12 +355,12 @@
                 android:layout_margin="8dp"
                 android:orientation="vertical"
 
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
                 <ImageView
                     android:layout_weight="2"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_gravity="center_horizontal"
                     android:src="@drawable/ellipsis"/>

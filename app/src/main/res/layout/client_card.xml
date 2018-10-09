@@ -26,6 +26,7 @@
                 android:layout_height="match_parent">
 
                 <TextView
+                    android:layout_marginLeft="12dp"
                     android:layout_marginStart="12dp"
                     android:id="@+id/client_name"
                     style="@style/TextAppearance.AppCompat.Headline"
@@ -38,6 +39,8 @@
 
                 <TextView
                     android:id="@+id/client_category"
+                    android:layout_marginLeft="12dp"
+
                     android:layout_marginStart="12dp"
                     style="@style/TextAppearance.AppCompat.Title"
                     android:gravity="center_vertical"
@@ -55,6 +58,7 @@
             android:layout_weight="2"
             android:layout_marginLeft="7sp"
             android:layout_marginRight="7sp"
+
             xmlns:android="http://schemas.android.com/apk/res/android"
             android:layout_width="match_parent"
             android:layout_height="0dp" >
@@ -67,6 +71,7 @@
 
 
             <LinearLayout
+                android:id="@+id/number_layout"
                 android:layout_margin="4dp"
                 android:layout_weight="1"
                 android:orientation="horizontal"
@@ -95,6 +100,7 @@
             <LinearLayout
                 android:layout_weight="1"
                 android:layout_margin="4dp"
+                android:id="@+id/address_layout"
 
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
@@ -120,6 +126,7 @@
 
             <LinearLayout
                 android:layout_margin="4dp"
+                android:id="@+id/site_layout"
 
                 android:layout_weight="1"
                 android:orientation="horizontal"
@@ -148,6 +155,8 @@
             <LinearLayout
                 android:layout_margin="4dp"
                 android:layout_weight="1"
+                android:id="@+id/vk_layout"
+
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="0dp">
@@ -175,6 +184,8 @@
                 android:layout_weight="1"
                 android:layout_margin="4dp"
                 android:orientation="horizontal"
+                android:id="@+id/twitter_layout"
+
                 android:layout_width="match_parent"
                 android:layout_height="0dp">
                 <TextView
@@ -201,6 +212,8 @@
                 android:layout_margin="4dp"
                 android:layout_weight="1"
                 android:orientation="horizontal"
+                android:id="@+id/facebook_layout"
+
                 android:layout_width="match_parent"
                 android:layout_height="0dp">
                 <TextView
@@ -224,6 +237,8 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/instagram_layout"
+
                 android:layout_margin="4dp"
                 android:layout_weight="1"
                 android:orientation="horizontal"
