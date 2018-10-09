@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="celebration_child">
+        <item>С выездом</item>
+    </string-array>
+
+    <string-array name="celebration_events">
+        <item>Аренда мебели / посуды для мероприятий</item>
+        <item>Аренда помещений</item>
+        <item>Аренда спортивных площадок</item>
+        <item>Аренда шатров / сценических конструкций для мероприятий</item>
+        <item>Банкетные залы</item>
+        <item>Изготовление тортов на заказ</item>
+        <item>Изготовление пирогов на заказ</item>
+        <item>Каркасно-тентовые конструкции для проведения мероприятий</item>
+        <item>Организация и проведение промоушн-акций</item>
+        <item>Организация спортивных мероприятий</item>
+        <item>Организация театральных / концертных мероприятий</item>
+        <item>Прокат мультимедийного / презентационного оборудования</item>
+        <item>Прокат спортивного инвентаря / техники</item>
+        <item>Услуги праздничного оформления</item>
+    </string-array>
+
+    <string-array name="celebration_flowers">
+        <item>Оформление шарами</item>
+        <item>Цветы</item>
+        <item>Шары</item>
+        <item>Подарки</item>
+        <item>Оформление залов и помещений</item>
+        <item>Фигуры из шаров</item>
+    </string-array>
+</resources>

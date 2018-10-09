@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="beauty_saloons">
+        <item>для всех</item>
+        <item>для детей</item>
+        <item>для женщин</item>
+        <item>для мужчин</item>
+
+    </string-array>
+
+    <string-array name="beauty_spa">
+        <item>европейские</item>
+        <item>тайские</item>
+        <item>элитные</item>
+    </string-array>
+
+    <string-array name="beauty_tattoo">
+        <item>Микроблейдинг</item>
+        <item>Перекрытие старых тату</item>
+        <item>Тату хной</item>
+        <item>Татуаж</item>
+        <item>Удаление тату</item>
+        <item>Художественное тату</item>
+    </string-array>
+
+    <string-array name="beauty_solarium">
+        <item>вертикальные</item>
+        <item>солярии горизонтальные</item>
+    </string-array>
+
+    <string-array name="beauty_massage">
+        <item>Вакуумный</item>
+        <item>Вызов массажиста на дом</item>
+        <item>Детский</item>
+        <item>Классический</item>
+        <item>Корректирующий</item>
+        <item>Лечебно-профилактический</item>
+        <item>Общий</item>
+    </string-array>
+
+    <string-array name="beauty_cosmetology">
+        <item>Депиляция</item>
+        <item>Лазерная депиляция</item>
+        <item>Лечебная косметология</item>
+        <item>Мезотерапия</item>
+        <item>Прокалывание ушей</item>
+        <item>Удаление татуажа</item>
+        <item>Фотоэпиляция</item>
+        <item>Шугаринг</item>
+        <item>Татуаж</item>
+        <item>Эпиляция</item>
+    </string-array>
+
+    <string-array name="beauty_nails">
+        <item>Вызов мастера маникюра и педикюра на дом</item>
+        <item>Коррекция ногтей</item>
+        <item>Маникюр аппаратный</item>
+        <item>Маникюр классический</item>
+        <item>Наращивание ногтей акрилом</item>
+        <item>Наращивание ногтей гелем</item>
+        <item>Педикюр аппаратный</item>
+        <item>Педикюр классический</item>
+        <item>Маникюр с покрытием гель лак</item>
+    </string-array>
+
+    <string-array name="beauty_other">
+        <item>Услуги росписи по телу</item>
+        <item>Кератинирование и ламинирование волос</item>
+        <item>Программы по коррекции фигуры</item>
+        <item>Макияж</item>
+        <item>Наращивание волос</item>
+        <item>Наращивание ресниц</item>
+        <item>Пирсинг</item>
+        <item>Услуги визажиста</item>
+    </string-array>
+</resources>

@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <ImageView
+                android:src="@drawable/profile"
+                android:layout_margin="4dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                />
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_marginStart="12dp"
+                    android:id="@+id/client_name"
+                    style="@style/TextAppearance.AppCompat.Headline"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:text="Имя"
+                    />
+
+                <TextView
+                    android:id="@+id/client_category"
+                    android:layout_marginStart="12dp"
+                    style="@style/TextAppearance.AppCompat.Title"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:text="Категория"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <ScrollView
+            android:scrollbars="vertical"
+            android:layout_weight="2"
+            android:layout_marginLeft="7sp"
+            android:layout_marginRight="7sp"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" >
+            <LinearLayout
+                android:layout_weight="2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+
+            <LinearLayout
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+                <TextView
+                    android:gravity="center"
+                    style="@style/TextAppearance.AppCompat.Medium"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="Телефон"/>
+                <TextView
+                    android:id="@+id/client_phone"
+                    android:autoLink="phone"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="7dp"
+                    style="@style/TextAppearance.AppCompat.Title"
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="+799999999"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_margin="4dp"
+
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+                <TextView
+                    android:gravity="center"
+                    style="@style/TextAppearance.AppCompat.Medium"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="Адрес"/>
+                <TextView
+                    android:id="@+id/client_address"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="7dp"
+                    style="@style/TextAppearance.AppCompat.Subhead"
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text=""/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_margin="4dp"
+
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+                <TextView
+                    android:gravity="center"
+                    style="@style/TextAppearance.AppCompat.Medium"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="Сайт"/>
+                <TextView
+                    android:id="@+id/client_site"
+                    android:gravity="center_vertical"
+                    android:autoLink="web"
+                    android:layout_marginLeft="7dp"
+                    style="@style/TextAppearance.AppCompat.Subhead"
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="+799999999"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+                <TextView
+                    android:gravity="center"
+                    style="@style/TextAppearance.AppCompat.Medium"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="ВК"/>
+                <TextView
+                    android:id="@+id/client_vk"
+                    android:autoLink="web"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="7dp"
+                    style="@style/TextAppearance.AppCompat.Title"
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="+799999999"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_margin="4dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+                <TextView
+                    android:gravity="center"
+                    style="@style/TextAppearance.AppCompat.Medium"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="Твитер"/>
+                <TextView
+                    android:id="@+id/client_twitter"
+                    android:autoLink="web"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="7dp"
+                    style="@style/TextAppearance.AppCompat.Title"
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="+799999999"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+                <TextView
+                    android:gravity="center"
+                    style="@style/TextAppearance.AppCompat.Medium"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="Фэйсбук"/>
+                <TextView
+                    android:id="@+id/client_facebook"
+                    android:autoLink="web"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="7dp"
+                    style="@style/TextAppearance.AppCompat.Title"
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="+799999999"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+                <TextView
+                    android:gravity="center"
+                    style="@style/TextAppearance.AppCompat.Medium"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="Инстаграм"/>
+                <TextView
+                    android:id="@+id/client_instagram"
+                    android:autoLink="web"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="7dp"
+                    style="@style/TextAppearance.AppCompat.Title"
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="+799999999"/>
+
+            </LinearLayout>
+
+
+
+            </LinearLayout>
+        </ScrollView>
+
+</LinearLayout>

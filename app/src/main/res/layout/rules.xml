@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    >
+
+    <ScrollView
+        android:scrollbars="vertical"
+
+        android:layout_marginLeft="7sp"
+        android:layout_marginRight="7sp"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <TextView
+            android:textSize="18sp"
+            android:autoSizeTextType="uniform"
+            android:layout_width="match_parent"
+            style="@android:style/TextAppearance.DeviceDefault.Widget.TextView"
+            android:layout_height="wrap_content"
+            android:text="@string/rules"
+            tools:targetApi="o" />
+
+    </ScrollView>
+</LinearLayout>

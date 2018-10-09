@@ -1,0 +1,132 @@
+<?xml version="1.0"?>
+
+    <resources>
+
+    <string name="app_name">Профсе</string>
+    <string name="transition_string">hello</string>
+
+        <string name="header_uslugy_vse">Услуги для всех</string>
+
+        <string name="header_uslugy_dostavka">Услуги по доставке</string>
+
+        <string name="header_reklam_uslugy_jur">Рекламные услуги для юрлиц</string>
+
+        <string name="main_other">Прочее</string>
+
+        <string name="ad_phys_textile">Текстиль с принтом</string>
+
+        <string name="ad_jur_radio_tv">Реклама на радио и TV</string>
+
+    <string name="ad_jur_press">Реклама в прессе</string>
+
+    <string name="ad_jur_typ">Издательства и типографии</string>
+
+        <string name="ad_jur_ad_outdoor">Наружная реклама</string>
+
+        <string name="vse_beauty">Красота</string>
+
+    <string name="vse_health">Зоровье</string>
+
+        <string name="vse_remont">Ремонт</string>
+
+    <string name="vse_education">Обучение</string>
+
+    <string name="vse_auto">Авто</string>
+
+    <string name="vse_celebration">Праздники </string>
+
+        <string name="vse_krasota_beauty">Салоны красоты</string>
+
+    <string name="vse_krasota_spa">СПА</string>
+
+    <string name="vse_krasota_tattoo">Тату-салоны</string>
+
+    <string name="vse_krasota_solarium">Солярии</string>
+
+    <string name="vse_krasota_massage">Массаж</string>
+
+    <string name="vse_krasota_cosmetology">Косметология</string>
+
+    <string name="vse_krasota_nails">Ногтевой сервис</string>
+
+        <string name="vse_health_diagnostics">Медицинские и диагностические центры</string>
+
+    <string name="vse_health_stomatology">Стоматология</string>
+
+    <string name="vse_health_plastics">Пластическая хирургия</string>
+
+    <string name="vse_health_narco">Наркологические услуги</string>
+
+    <string name="vse_health_psychology">Услуги психолога</string>
+
+    <string name="vse_health_optics">Оптика</string>
+
+    <string name="vse_health_veterinar">Ветеринарные услуги</string>
+
+        <string name="vse_repair_social_work">Общестроительные работы</string>
+
+    <string name="vse_repair_flat_repair">Ремонт и отделка квартир</string>
+
+        <string name="vse_repair_windows">Окна и остекление</string>
+
+    <string name="vse_repair_carpentry">Плотницкие работы</string>
+
+    <string name="vse_repair_household_work">Ремонт бытовой техники</string>
+
+        <string name="vse_auto_diagnostics">Диагностика</string>
+
+    <string name="vse_auto_tech_insurance">Техосмотр, страховки</string>
+
+    <string name="vse_auto_tire">Шиномонтаж</string>
+
+    <string name="vse_auto_electrics">Электрика</string>
+
+    <string name="vse_auto_suspension">Подвеска, ходовая</string>
+
+    <string name="vse_auto_body">Кузов</string>
+
+    <string name="vse_auto_motor">Моторные работы</string>
+
+        <string name="vse_education_old">Для взрослых</string>
+
+        <string name="vse_sport_fitness">Фитнес и бодибилдинг</string>
+
+    <string name="vse_sport_dance">Танцы</string>
+
+    <string name="vse_sport_sport">Спортивные секции</string>
+
+        <string name="vse_rest_pansionat">Пансионаты</string>
+
+        <string name="vse_rest_documents">Оформление документов</string>
+
+    <string name="vse_rest_rent">Аренда жилья</string>
+
+    <string name="vse_celebration_child">Организация детских праздников</string>
+
+        <string name="vse_celebration_balloons">Цветы, шары, подарки</string>
+
+    <string name="vse_celebration_animators">Аниматоры</string>
+
+    <string name="vse_celebration_photo">Фото и видео сьемка</string>
+
+    <string name="vse_celebration_quest_room">Квэст румы</string>
+
+        <string name="vse_other_atelier">Ателье</string>
+
+    <string name="vse_other_chemistry">Химчистки и прачечные</string>
+
+        <string name="ship_heavy">Грузоперевозки</string>
+
+    <string name="ship_rarity">Доставка ценных грузов</string>
+
+    <string name="ship_presents">Доставка цветов, шаров, подарков</string>
+
+    <string name="ship_coal">Доставка угля, дров</string>
+
+    <string name="ship_sand">Доставка песка, грунта и пр </string>
+
+        <string name="rules">Мы ценим Вас и Ваше время.\n Мы благодарны за установку данного Приложения. Будем признательны, если в процессе пользования Вы будете соблюдать несложные правила!\n 1.Регистрация:\n Для физических лиц - фамилия, имя, контактный номер телефона\n Для юридических лиц - название организации, ИНН, контактное лицо и номер телефона\n 2. Если Вы приобретаете услугу через наше Приложение, то имеете право на скидку (подробнее здесь: каждая услуга, оказанная через Приложение, имеет накопительную систему: от первичной - 3% до максимальной - 10%. По достижении максимальной скидки, клиент имеет право на подарок).\n 3. Наше Приложение не несет ответственности за качество предоставляемых услуг, кроме рубрик с оформлением заявки (мы проверяем добросовестность исполнения лично)\n 4. Все вопросы по сотрудничеству, работе Приложения и пожелания можно отправить на e-mail: info_profse@mail.ru </string>
+
+
+
+    </resources>

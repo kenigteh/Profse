@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="health_stomatology">
+        <item>Взрослая стоматология</item>
+        <item>Детская стоматология</item>
+        <item>Имплантология</item>
+        <item>Ортодонт</item>
+        <item>Челюстно-лицевая стоматология</item>
+    </string-array>
+
+    <string-array name="health_other">
+        <item>Аллерголог / иммунолог</item>
+        <item>Анестезиолог</item>
+        <item>Банки стволовых клеток</item>
+        <item>Вертебролог</item>
+        <item>Ветеринарные лаборатории</item>
+        <item>Врач-гомеопат</item>
+        <item>Выездные ветеринарные службы</item>
+        <item>Гастроэнтеролог</item>
+        <item>Гематолог</item>
+        <item>Гемостазиолог</item>
+        <item>Генетик / Генетические исследования</item>
+        <item>Гепатолог</item>
+        <item>Гинеколог</item>
+        <item>Дерматовенеролог</item>
+        <item>Диабетологические центры</item>
+        <item>Диализные центры</item>
+        <item>Занятия лечебной физкультурой</item>
+        <item>Инфекционист</item>
+        <item>Кардиолог</item>
+        <item>Лаборатории</item>
+        <item>Логопед</item>
+        <item>Маммолог</item>
+        <item>Мануальный терапевт</item>
+        <item>Массаж</item>
+        <item>Медицинское лечение зависимостей</item>
+        <item>Медсестра на дом</item>
+        <item>Микрохирургия глаза</item>
+        <item>Невролог</item>
+        <item>Нефролог</item>
+        <item>Онколог</item>
+        <item>Патронажные услуги</item>
+        <item>Подолог</item>
+        <item>Проктолог</item>
+        <item>Психологическая помощь в избавлении от зависимостей</item>
+        <item>Реабилитационные центры</item>
+        <item>Услуги ведения беременности</item>
+        <item>Услуги детских специалистов</item>
+        <item>Услуги процедурного кабинета</item>
+        <item>Психиатр</item>
+        <item>Психотерапевт</item>
+        <item>Пульмонолог</item>
+        <item>Ревматолог</item>
+        <item>Рефлексотерапевт</item>
+        <item>Сексолог</item>
+        <item>Сомнолог</item>
+        <item>Терапевт</item>
+        <item>Трихолог</item>
+        <item>Уролог / андролог</item>
+        <item>Физиотерапевт</item>
+        <item>Флеболог</item>
+        <item>Фтизиатр</item>
+        <item>Хирург</item>
+        <item>Эндокринолог</item>
+        <item>Эпилептолог</item>
+        <item>Центры диетологии / нутрициологии</item>
+        <item>Центры здоровья</item>
+        <item>Центры мануальной терапии</item>
+        <item>Центры планирования семьи</item>
+    </string-array>
+</resources>

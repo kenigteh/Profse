@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="other_atelier">
+        <item>Ателье меховые / кожаные</item>
+        <item>Ателье обувные</item>
+        <item>Ателье по пошиву авточехлов и автоковров</item>
+        <item>Ателье по пошиву верхней одежды</item>
+        <item>Ателье по пошиву легкой одежды</item>
+        <item>Ателье по пошиву портьер</item>
+        <item>Ателье по пошиву спецодежды</item>
+        <item>Вязание трикотажных изделий</item>
+        <item>Зооателье</item>
+    </string-array>
+
+    <string-array name="other_chemistry">
+        <item>Чистка ковров</item>
+        <item>Чистка мебели</item>
+        <item>Чистка одежды</item>
+        <item>Чистка салона автомобиля</item>
+        <item>Прачечные</item>
+        <item>Химчистки</item>
+    </string-array>
+
+    <string-array name="other_out">
+        <item>Мытье окон</item>
+        <item>Очистка септиков / ассенизатор</item>
+        <item>Уборка квартир</item>
+        <item>Уборка коттеджей</item>
+        <item>Уборка офисов</item>
+        <item>Уборка подъездов</item>
+        <item>Уборка территории</item>
+        <item>Услуги домработницы</item>
+    </string-array>
+
+    <string-array name="other_social">
+        <item>Аварийные службы</item>
+        <item>Администрация города / городского округа</item>
+        <item>Администрация области</item>
+        <item>Благотворительные фонды</item>
+        <item>Государственные архивы</item>
+        <item>Детские дома / Приюты</item>
+        <item>Диспансеры</item>
+        <item>Дома ребёнка</item>
+        <item>Дома престарелых</item>
+        <item>МФЦ</item>
+        <item>Налоговые инспекции</item>
+        <item>Негосударственные пенсионные фонды</item>
+        <item>Общественные организации</item>
+        <item>Органы государственного надзора</item>
+        <item>Пенсионный фонд РФ</item>
+        <item>Приёмные депутатов</item>
+        <item>Приёмные Уполномоченных по правам человека</item>
+        <item>Службы судебных приставов</item>
+        <item>Социальные службы</item>
+        <item>Суды</item>
+        <item>Фонд обязательного медицинского страхования</item>
+        <item>Фонды социального страхования</item>
+    </string-array>
+
+    <string-array name="other_pets">
+        <item>Выгул домашних животных</item>
+        <item>Гостиницы для животных</item>
+        <item>Груминг / стрижка животных</item>
+        <item>Клубы домашних животных / Питомники</item>
+        <item>Конные клубы / Ипподромы</item>
+        <item>Приюты для животных</item>
+        <item>Услуги по уходу за животными</item>
+    </string-array>
+
+    <string-array name="other_design">
+        <item>Ландшафтный дизайн</item>
+        <item>Дизайн интерьера</item>
+        <item>Дизайн полиграфии</item>
+        <item>Дизайн сайтов</item>
+        <item>Дизайнер оформитель</item>
+        <item>Дизайнер модельер</item>
+        <item>Дизайн аквариумов</item>
+
+    </string-array>
+</resources>

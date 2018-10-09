@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="presents_other">
+        <item>Именные кружки</item>
+        <item>Изделия из дерева</item>
+        <item>Мыло на заказ</item>
+        <item>Пряники на заказ</item>
+        <item>Торты на заказ</item>
+        <item>Свечи на заказ</item>
+        <item>Куклы на заказ</item>
+        <item>Букеты из конфет</item>
+        <item>Подарочные наборы на заказ</item>
+
+    </string-array>
+
+</resources>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="sport_fitness_bodybuilding">
+        <item>Фитнес-клубы</item>
+    </string-array>
+    <string-array name="sport_sections">
+        <item>Авиационные клубы</item>
+        <item>Аквааэробика</item>
+        <item>Бассейн</item>
+        <item>Велнес-залы</item>
+        <item>Гольф-клубы</item>
+        <item>Ледовые дворцы / Катки</item>
+        <item>Лазерный пейнтбол</item>
+        <item>Профессиональные спортивные клубы</item>
+        <item>Спортивно-тактические клубы</item>
+        <item>Спортивно-технические клубы</item>
+        <item>Спортивные секции</item>
+        <item>Спортивные школы</item>
+        <item>Стрелковые клубы</item>
+        <item>Центры йоги</item>
+        <item>Яхт-клубы</item>
+        <item>Федерации спорта</item>
+    </string-array>
+
+    <string-array name="rest_to_live">
+        <item>Гостевые дома</item>
+        <item>Гостиницы</item>
+        <item>Хостелы</item>
+    </string-array>
+
+    <string-array name="rest_child">
+        <item>Аквапарки / Водные аттракционы</item>
+        <item>Батутные центры</item>
+        <item>Детские игровые залы / Игротеки</item>
+        <item>Детские лагеря отдыха</item>
+        <item>Организация экскурсий</item>
+        <item>Детский досуг</item>
+    </string-array>
+
+    <string-array name="rest_documents">
+        <item>Фото на документы</item>
+        <item>Помощь в оформлении виз / загранпаспортов</item>
+    </string-array>
+
+    <string-array name="rest_pansionat">
+        <item>Санатории</item>
+        <item>Пансионаты</item>
+    </string-array>
+</resources>

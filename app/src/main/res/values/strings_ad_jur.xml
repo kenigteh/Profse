@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="ad_jur_other">
+        <item>Call-центры</item>
+        <item>Indoor-реклама (реклама в помещениях)</item>
+        <item>Аромамаркетинг</item>
+        <item>Аудиореклама</item>
+        <item>Дизайн рекламы</item>
+        <item>Дизайнерские студии</item>
+        <item>Озеленение помещений</item>
+        <item>Размещение рекламы в интернете</item>
+        <item>Размещение рекламы на транспорте</item>
+        <item>Реклама в аэропорту</item>
+        <item>3D-реклама на вашем сайте</item>
+        <item>Реклама в транспорте</item>
+        <item>Реклама в ТЦ</item>
+        <item>Реклама на автовокзале</item>
+        <item>Реклама на ж/д вокзале</item>
+        <item>Согласование наружной рекламы</item>
+        <item>Лазерная гравировка</item>
+        <item>Услуги лазерной резки</item>
+        <item>Печати и штампы</item>
+        <item>Наградная продукция</item>
+
+    </string-array>
+
+    <string-array name="ad_jur_news">
+        <item>Реклама на ТВ</item>
+        <item>Реклама на радио</item>
+        <item>Реклама в интернете</item>
+        <item>Транспортная реклама</item>
+        <item>Реклама в прессе</item>
+    </string-array>
+
+    <string-array name="ad_jur_out">
+        <item>Баннеры</item>
+        <item>Бегущие строки</item>
+        <item>Брендирование авто</item>
+        <item>Козырьки и навесы</item>
+        <item>Изделия из оргстекла</item>
+        <item>Знаки и таблички</item>
+        <item>Неоновая реклама</item>
+        <item>Номерки</item>
+        <item>Паспорт рекламного места</item>
+        <item>Оклейка пленкой витрин и авто</item>
+        <item>Объемные буквы</item>
+        <item>Монтаж/демонтаж/ремонт рекламных конструкций</item>
+        <item>Штендеры, стеллы и пр</item>
+        <item>Лайтбоксы</item>
+        <item>Световые короба, консоли</item>
+        <item>Рекламные вывески</item>
+        <item>Оформление витрин, окон, входных групп</item>
+        <item>Изготовление рекламных конструкций</item>
+
+    </string-array>
+
+    <string-array name="ad_jur_atelier">
+        <item>Пошив спецодежды</item>
+        <item>Пошив форменной одежды</item>
+        <item>Пошив трикотаж</item>
+        <item>Шейные платки</item>
+        <item>Вышивка логотипов</item>
+        <item>Шевроны</item>
+        <item>Нашивки</item>
+        <item>Текстиль с вышивкой</item>
+        <item>Корпоративный стиль</item>
+    </string-array>
+    <string-array name="ad_jur_typography">
+        <item>Многотиражная продукция</item>
+        <item>Изготовление папок и удостоверений</item>
+        <item>Помощь в подготовке мероприятий</item>
+    </string-array>
+
+</resources>
