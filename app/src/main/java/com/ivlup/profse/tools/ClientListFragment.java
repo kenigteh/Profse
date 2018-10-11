@@ -99,15 +99,5 @@ public class ClientListFragment extends Fragment {
 
 
     }
-
-        public  void toClientCard() {
-
-            MainActivity.fm = getFragmentManager();
-            MainActivity.ft = MainActivity.fm.beginTransaction();
-            MainActivity.ft.replace(R.id.fragment_container, new FragmentClientCard());
-            MainActivity.ft.commit();
-            MainActivity.ft.addToBackStack(null);
-        }
-
 }
 //class ClientListFragment extends RecyclerView.ViewHolder implements View.OnclickListener, View.OnLongClickListener
