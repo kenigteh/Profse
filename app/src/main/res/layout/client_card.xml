@@ -77,20 +77,19 @@
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
-                <TextView
+                <ImageView
                     android:gravity="center"
-                    style="@style/TextAppearance.AppCompat.Medium"
                     android:layout_weight="1"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:text="Телефон"/>
+                    android:src="@drawable/call_icon"/>
                 <TextView
                     android:id="@+id/client_phone"
                     android:autoLink="phone"
                     android:gravity="center_vertical"
                     android:layout_marginLeft="7dp"
                     style="@style/TextAppearance.AppCompat.Title"
-                    android:layout_weight="2"
+                    android:layout_weight="4"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:maxLines="2"
@@ -106,19 +105,18 @@
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
-                <TextView
+                <ImageView
                     android:gravity="center"
-                    style="@style/TextAppearance.AppCompat.Medium"
                     android:layout_weight="1"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:text="Адрес"/>
+                    android:src="@drawable/adress_icon"/>
                 <TextView
                     android:id="@+id/client_address"
                     android:gravity="center_vertical"
                     android:layout_marginLeft="7dp"
                     style="@style/TextAppearance.AppCompat.Title"
-                    android:layout_weight="2"
+                    android:layout_weight="4"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:text=""/>
@@ -133,20 +131,20 @@
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
-                <TextView
+                <ImageView
+                    android:src="@drawable/site_icon"
                     android:gravity="center"
-                    style="@style/TextAppearance.AppCompat.Medium"
                     android:layout_weight="1"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:text="Сайт"/>
+                    />
                 <TextView
                     android:id="@+id/client_site"
                     android:gravity="center_vertical"
                     android:autoLink="web"
                     android:layout_marginLeft="7dp"
                     style="@style/TextAppearance.AppCompat.Title"
-                    android:layout_weight="2"
+                    android:layout_weight="4"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:text="+799999999"/>
@@ -161,20 +159,20 @@
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
-                <TextView
+                <ImageView
+                    android:src="@drawable/vk_icon"
                     android:gravity="center"
-                    style="@style/TextAppearance.AppCompat.Medium"
                     android:layout_weight="1"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:text="ВК"/>
+                   />
                 <TextView
                     android:id="@+id/client_vk"
                     android:autoLink="web"
                     android:gravity="center_vertical"
                     android:layout_marginLeft="7dp"
                     style="@style/TextAppearance.AppCompat.Title"
-                    android:layout_weight="2"
+                    android:layout_weight="4"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:text="+799999999"/>
@@ -189,20 +187,20 @@
 
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
-                <TextView
+                <ImageView
+                    android:src="@drawable/ic_twitter"
                     android:gravity="center"
-                    style="@style/TextAppearance.AppCompat.Medium"
                     android:layout_weight="1"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:text="Твитер"/>
+                   />
                 <TextView
                     android:id="@+id/client_twitter"
                     android:autoLink="web"
                     android:gravity="center_vertical"
                     android:layout_marginLeft="7dp"
                     style="@style/TextAppearance.AppCompat.Title"
-                    android:layout_weight="2"
+                    android:layout_weight="4"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:text="+799999999"/>
@@ -217,20 +215,20 @@
 
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
-                <TextView
+                <ImageView
+                    android:src="@drawable/facebook_icon"
                     android:gravity="center"
-                    style="@style/TextAppearance.AppCompat.Medium"
                     android:layout_weight="1"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:text="Фэйсбук"/>
+                   />
                 <TextView
                     android:id="@+id/client_facebook"
                     android:autoLink="web"
                     android:gravity="center_vertical"
                     android:layout_marginLeft="7dp"
                     style="@style/TextAppearance.AppCompat.Title"
-                    android:layout_weight="2"
+                    android:layout_weight="4"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:text="+799999999"/>
@@ -245,20 +243,20 @@
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
-                <TextView
+                <ImageView
+                    android:src="@drawable/ic_instagram"
                     android:gravity="center"
-                    style="@style/TextAppearance.AppCompat.Medium"
                     android:layout_weight="1"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:text="Инстаграм"/>
+                    />
                 <TextView
                     android:id="@+id/client_instagram"
                     android:autoLink="web"
                     android:gravity="center_vertical"
                     android:layout_marginLeft="7dp"
                     style="@style/TextAppearance.AppCompat.Title"
-                    android:layout_weight="2"
+                    android:layout_weight="4"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:text="+799999999"/>

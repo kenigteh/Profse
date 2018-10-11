@@ -54,7 +54,7 @@ public class FragmentAdJurPresents extends Fragment {
                         switch (finalI) {
 
                             case 0:
-                                MainActivity.chosen = "От 30 до 100 руб";
+                                MainActivity.chosenClient = "От 30 до 100 руб";
                                 MainActivity.fm = getFragmentManager();
                                 MainActivity.ft = MainActivity.fm.beginTransaction();
                                 MainActivity.ft.replace(R.id.fragment_container, new FragmentChoose());
@@ -62,7 +62,7 @@ public class FragmentAdJurPresents extends Fragment {
                                 MainActivity.ft.addToBackStack(null);
                                 break;
                             case 1:
-                                MainActivity.chosen = "От 100 до 300 руб";
+                                MainActivity.chosenClient = "От 100 до 300 руб";
                                 MainActivity.fm = getFragmentManager();
                                 MainActivity.ft = MainActivity.fm.beginTransaction();
                                 MainActivity.ft.replace(R.id.fragment_container, new FragmentChoose());
@@ -70,7 +70,7 @@ public class FragmentAdJurPresents extends Fragment {
                                 MainActivity.ft.addToBackStack(null);
                                 break;
                             case 2:
-                                MainActivity.chosen = "От 300 до 500 руб";
+                                MainActivity.chosenClient = "От 300 до 500 руб";
                                 MainActivity.fm = getFragmentManager();
                                 MainActivity.ft = MainActivity.fm.beginTransaction();
                                 MainActivity.ft.replace(R.id.fragment_container, new FragmentChoose());
@@ -78,7 +78,7 @@ public class FragmentAdJurPresents extends Fragment {
                                 MainActivity.ft.addToBackStack(null);
                                 break;
                             case 3:
-                                MainActivity.chosen = "От 500 руб";
+                                MainActivity.chosenClient = "От 500 руб";
                                 MainActivity.fm = getFragmentManager();
                                 MainActivity.ft = MainActivity.fm.beginTransaction();
                                 MainActivity.ft.replace(R.id.fragment_container, new FragmentChoose());

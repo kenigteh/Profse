@@ -54,7 +54,7 @@ public class FragmentAdJurEvents extends Fragment {
                         switch (finalI) {
 
                             case 0:
-                                MainActivity.chosen = "Конференции, семинары, тренинги";
+                                MainActivity.chosenClient = "Конференции, семинары, тренинги";
                                 MainActivity.fm = getFragmentManager();
                                 MainActivity.ft = MainActivity.fm.beginTransaction();
                                 MainActivity.ft.replace(R.id.fragment_container, new FragmentChoose());
@@ -62,7 +62,7 @@ public class FragmentAdJurEvents extends Fragment {
                                 MainActivity.ft.addToBackStack(null);
                                 break;
                             case 1:
-                                MainActivity.chosen = "Выставки";
+                                MainActivity.chosenClient = "Выставки";
                                 MainActivity.fm = getFragmentManager();
                                 MainActivity.ft = MainActivity.fm.beginTransaction();
                                 MainActivity.ft.replace(R.id.fragment_container, new FragmentChoose());
@@ -70,7 +70,7 @@ public class FragmentAdJurEvents extends Fragment {
                                 MainActivity.ft.addToBackStack(null);
                                 break;
                             case 2:
-                                MainActivity.chosen = "Презентации";
+                                MainActivity.chosenClient = "Презентации";
                                 MainActivity.fm = getFragmentManager();
                                 MainActivity.ft = MainActivity.fm.beginTransaction();
                                 MainActivity.ft.replace(R.id.fragment_container, new FragmentChoose());
@@ -78,7 +78,7 @@ public class FragmentAdJurEvents extends Fragment {
                                 MainActivity.ft.addToBackStack(null);
                                 break;
                             case 3:
-                                MainActivity.chosen = "Спортивные мероприятия";
+                                MainActivity.chosenClient = "Спортивные мероприятия";
                                 MainActivity.fm = getFragmentManager();
                                 MainActivity.ft = MainActivity.fm.beginTransaction();
                                 MainActivity.ft.replace(R.id.fragment_container, new FragmentChoose());

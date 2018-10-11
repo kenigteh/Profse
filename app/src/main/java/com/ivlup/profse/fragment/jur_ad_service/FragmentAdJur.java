@@ -66,7 +66,7 @@ public class FragmentAdJur extends Fragment {
                             MainActivity.ft.addToBackStack(null);
                             break;
                         case 1 :
-                            MainActivity.chosen = "Издательства и тиографии";
+                            MainActivity.chosenClient = "Издательства и типографии";
                             MainActivity.fm = getFragmentManager();
                             MainActivity.ft = MainActivity.fm.beginTransaction();
                             MainActivity.ft.replace(R.id.fragment_container, new FragmentChoose());
@@ -106,7 +106,7 @@ public class FragmentAdJur extends Fragment {
                             MainActivity.ft.addToBackStack(null);
                             break;
                         case 6 :
-                            MainActivity.chosen = "Брендинг";
+                            MainActivity.chosenClient = "Брендинг";
                             MainActivity.fm = getFragmentManager();
                             MainActivity.ft = MainActivity.fm.beginTransaction();
                             MainActivity.ft.replace(R.id.fragment_container, new FragmentChoose());

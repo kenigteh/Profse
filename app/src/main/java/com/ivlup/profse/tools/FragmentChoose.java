@@ -61,21 +61,21 @@ public class FragmentChoose extends Fragment {
         btchoose.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (    MainActivity.chosen.equals("Издательства и тиографии") ||
-                        MainActivity.chosen.equals("Конференции, семинары, тренинги") ||
-                        MainActivity.chosen.equals("Выставки") ||
-                        MainActivity.chosen.equals("Спортивные мероприятия") ||
-                        MainActivity.chosen.equals("Презенты для клиентов") ||
-                        MainActivity.chosen.equals("От 30 до 100 руб") ||
-                        MainActivity.chosen.equals("От 100 до 300 руб") ||
-                        MainActivity.chosen.equals("От 300 до 500 руб") ||
-                        MainActivity.chosen.equals("От 300 до 500 руб") ||
-                        MainActivity.chosen.equals("От 500 руб") ||
-                        MainActivity.chosen.equals("Вип-подарки") ||
-                        MainActivity.chosen.equals("Имидж сотрудников") ||
-                        MainActivity.chosen.equals("Подарки для детей") ||
-                        MainActivity.chosen.equals("Ручная работа") ||
-                        MainActivity.chosen.equals("Презентации")) {
+                if (    MainActivity.chosenClient.equals("Издательства и типографии") ||
+                        MainActivity.chosenClient.equals("Конференции, семинары, тренинги") ||
+                        MainActivity.chosenClient.equals("Выставки") ||
+                        MainActivity.chosenClient.equals("Спортивные мероприятия") ||
+                        MainActivity.chosenClient.equals("Презенты для клиентов") ||
+                        MainActivity.chosenClient.equals("От 30 до 100 руб") ||
+                        MainActivity.chosenClient.equals("От 100 до 300 руб") ||
+                        MainActivity.chosenClient.equals("От 300 до 500 руб") ||
+                        MainActivity.chosenClient.equals("От 300 до 500 руб") ||
+                        MainActivity.chosenClient.equals("От 500 руб") ||
+                        MainActivity.chosenClient.equals("Вип-подарки") ||
+                        MainActivity.chosenClient.equals("Имидж сотрудников") ||
+                        MainActivity.chosenClient.equals("Подарки для детей") ||
+                        MainActivity.chosenClient.equals("Ручная работа") ||
+                        MainActivity.chosenClient.equals("Презентации")) {
                     MainActivity.fm = getFragmentManager();
                     MainActivity.ft = MainActivity.fm.beginTransaction();
                     MainActivity.ft.replace(R.id.fragment_container, new ClientListFragment());
