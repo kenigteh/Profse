@@ -19,7 +19,7 @@ public class FragmentAdJurPresents extends Fragment {
         super.onResume();
 
         ((MainActivity) getActivity())
-                .setActionBarTitle("Преенты для клиентов");
+                .setActionBarTitle("Презенты для клиентов");
 
     }
 

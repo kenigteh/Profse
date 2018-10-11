@@ -109,7 +109,7 @@ public class FragmentAdJur extends Fragment {
                             MainActivity.chosenClient = "Брендинг";
                             MainActivity.fm = getFragmentManager();
                             MainActivity.ft = MainActivity.fm.beginTransaction();
-                            MainActivity.ft.replace(R.id.fragment_container, new FragmentChoose());
+                            MainActivity.ft.replace(R.id.fragment_container, new ClientListFragment());
                             MainActivity.ft.commit();
                             MainActivity.ft.addToBackStack(null);
                             break;

@@ -42,7 +42,11 @@
                 android:resource="@xml/searchable"/>
     </activity>
 
+        <activity android:name=".ProfileActivity"
+            >
 
+
+        </activity>
     </application>
 
 </manifest>

@@ -30,42 +30,71 @@ public class Client {
     }
 
     public String getName() {
+        if (!this.name.isEmpty())
         return name;
+        else
+            return "";
     }
 
     public String getCategory() {
-        return category;
+        if (!this.category.isEmpty())
+            return category;
+        else
+            return "";
     }
 
     public String getPhone() {
-        return phone;
+        if (!this.phone.isEmpty())
+            return phone;
+        else
+            return "";
     }
 
     public String getAddress() {
-        return address;
+        if (!this.address.isEmpty())
+            return address;
+        else
+            return "";
     }
 
     public String getSite() {
-        return site;
-    }
+        if (!this.site.isEmpty())
+            return site;
+        else
+            return "";    }
 
     public String getVk() {
-        return vk;
+        if (!this.vk.isEmpty())
+            return vk;
+        else
+            return "";
     }
 
     public String getTwitter() {
-        return twitter;
+        if (!this.twitter.isEmpty())
+            return twitter;
+        else
+            return "";
     }
 
     public String getFacebook() {
-        return facebook;
+        if (!this.facebook.isEmpty())
+            return facebook;
+        else
+            return "";
     }
 
     public String getInstagram() {
-        return instagram;
+        if (!this.instagram.isEmpty())
+            return instagram;
+        else
+            return "";
     }
 
     public String getDiscount() {
-        return discount;
+        if (!this.discount.isEmpty())
+            return discount;
+        else
+            return "";
     }
 }

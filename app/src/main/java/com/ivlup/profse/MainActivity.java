@@ -1,5 +1,6 @@
 package com.ivlup.profse;
 
+import android.content.Intent;
 import android.database.Cursor;
 import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
@@ -13,7 +14,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatDelegate;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.FrameLayout;
+import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import com.ivlup.profse.fragment.all_service.FragmentAllServices;
@@ -29,7 +32,7 @@ import java.util.Map;
 public class MainActivity extends AppCompatActivity {
 
     public static String chosen;
-    public static String chosenClient;
+    public static String chosenClient;//
     public static String chosenName;
     public static ArrayList<Client> clients = new ArrayList();
     public static ArrayList<String> clientCategories = new ArrayList();
@@ -113,6 +116,16 @@ public class MainActivity extends AppCompatActivity {
         mDrawerLayout = findViewById(R.id.drawer_layout);
 
         NavigationView navigationView = findViewById(R.id.nav_view);
+        View headerview = navigationView.getHeaderView(0);
+        LinearLayout profileHeader = (LinearLayout) headerview.findViewById(R.id.profile_header);
+        profileHeader.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, ProfileActivity.class);
+                startActivity(intent);
+            }
+        });
+
         navigationView.setNavigationItemSelectedListener(
                 new NavigationView.OnNavigationItemSelectedListener() {
                     @Override
@@ -128,19 +141,12 @@ public class MainActivity extends AppCompatActivity {
                             ft = fm.beginTransaction();
                             ft.replace(R.id.fragment_container, new FragmentMenu());
                             ft.commit();
-                            ft.addToBackStack(null);
+
                         }
-
-                        // close drawer when item is tapped
-
-
-                        // Add code here to update the UI based on the item selected
-                        // For example, swap UI fragments here
 
                         return true;
                     }
                 });
-
     }
 
     private void fetchClients() {

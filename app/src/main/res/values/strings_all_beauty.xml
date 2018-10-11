@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="beauty_saloons">
-        <item>для всех</item>
         <item>для детей</item>
         <item>для женщин</item>
         <item>для мужчин</item>
