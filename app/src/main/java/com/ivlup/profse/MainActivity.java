@@ -4,15 +4,19 @@ import android.database.Cursor;
 import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
 import android.support.annotation.Nullable;
+import android.support.design.widget.NavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
+import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatDelegate;
+import android.view.MenuItem;
 import android.widget.FrameLayout;
 import android.widget.Toast;
 
+import com.ivlup.profse.fragment.all_service.FragmentAllServices;
 import com.ivlup.profse.tools.Client;
 import com.ivlup.profse.tools.DatabaseHelper;
 
@@ -35,10 +39,14 @@ public class MainActivity extends AppCompatActivity {
     private SQLiteDatabase mDb;
     private Fragment FragmentMenu;
     boolean doubleBackToExitPressedOnce = false;
+    private DrawerLayout mDrawerLayout;
 
     public static Map<String, Client> mapClients = new HashMap<String, Client>(1000);
     FrameLayout frame;
 
+    public void openDrawer(){
+        mDrawerLayout.openDrawer(mDrawerLayout);
+    }
 
     public void setActionBarTitle(String title) {
         getSupportActionBar().setTitle(title);
@@ -46,7 +54,12 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onSupportNavigateUp(){
-        if(getFragmentManager().getBackStackEntryCount() == 1) {
+        FragmentMenu test = (FragmentMenu) getSupportFragmentManager().findFragmentByTag("detail");
+        if (test != null && test.isVisible()) {
+            openDrawer();
+        }
+
+        else if (getFragmentManager().getBackStackEntryCount() == 1) {
             finish();
             moveTaskToBack(false);
         }
@@ -61,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
 
         if(getFragmentManager().getBackStackEntryCount() == 1) {
 
-           //finish();
+            finish();
             moveTaskToBack(false);
         }
         else {
@@ -88,7 +101,7 @@ public class MainActivity extends AppCompatActivity {
             throw mSQLException;
         }
         fetchClients();
-        //if (savedInstanceState == null) {
+        if (savedInstanceState == null) {
             fm = getSupportFragmentManager();
             ft = fm.beginTransaction();
                     FragmentMenu = new FragmentMenu();
@@ -96,8 +109,37 @@ public class MainActivity extends AppCompatActivity {
                     ft.commit();
 
                    // ft.addToBackStack(null);
-        //}
+        }
+        mDrawerLayout = findViewById(R.id.drawer_layout);
 
+        NavigationView navigationView = findViewById(R.id.nav_view);
+        navigationView.setNavigationItemSelectedListener(
+                new NavigationView.OnNavigationItemSelectedListener() {
+                    @Override
+                    public boolean onNavigationItemSelected(MenuItem menuItem) {
+                        // set item as selected to persist highlight
+
+                        int id = menuItem.getItemId();
+                        mDrawerLayout.closeDrawers();
+
+                        menuItem.setChecked(true);
+                        if (id == R.id.nav_menu) {
+                            fm = getSupportFragmentManager();
+                            ft = fm.beginTransaction();
+                            ft.replace(R.id.fragment_container, new FragmentMenu());
+                            ft.commit();
+                            ft.addToBackStack(null);
+                        }
+
+                        // close drawer when item is tapped
+
+
+                        // Add code here to update the UI based on the item selected
+                        // For example, swap UI fragments here
+
+                        return true;
+                    }
+                });
 
     }
 

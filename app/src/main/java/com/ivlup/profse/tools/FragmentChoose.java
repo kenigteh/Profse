@@ -75,7 +75,14 @@ public class FragmentChoose extends Fragment {
                         MainActivity.chosenClient.equals("Имидж сотрудников") ||
                         MainActivity.chosenClient.equals("Подарки для детей") ||
                         MainActivity.chosenClient.equals("Ручная работа") ||
+                        MainActivity.chosenClient.equals("Типографии") ||
+                        MainActivity.chosenClient.equals("Подарки с гравировкой") ||
+                        MainActivity.chosenClient.equals("Текстиль с принтом") ||
+                        MainActivity.chosenClient.equals("Услуги распечатки") ||
+                        MainActivity.chosenClient.equals("Подарки ручной работы") ||
                         MainActivity.chosenClient.equals("Презентации")) {
+
+
                     MainActivity.fm = getFragmentManager();
                     MainActivity.ft = MainActivity.fm.beginTransaction();
                     MainActivity.ft.replace(R.id.fragment_container, new ClientListFragment());

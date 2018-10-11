@@ -63,7 +63,7 @@ public class FragmentPresents extends Fragment {
                     switch (finalI) {
 
                         case 0 :
-                            MainActivity.chosen = "Типографии";
+                            MainActivity.chosenClient = "Типографии";
                             MainActivity.fm = getFragmentManager();
                             MainActivity.ft = MainActivity.fm.beginTransaction();
                             MainActivity.ft.replace(R.id.fragment_container, new FragmentChoose());
@@ -71,7 +71,7 @@ public class FragmentPresents extends Fragment {
                             MainActivity.ft.addToBackStack(null);
                             break;
                         case 1 :
-                            MainActivity.chosen = "Подарки с гравировкой";
+                            MainActivity.chosenClient = "Подарки с гравировкой";
                             MainActivity.fm = getFragmentManager();
                             MainActivity.ft = MainActivity.fm.beginTransaction();
                             MainActivity.ft.replace(R.id.fragment_container, new FragmentChoose());
@@ -79,7 +79,7 @@ public class FragmentPresents extends Fragment {
                             MainActivity.ft.addToBackStack(null);
                             break;
                         case 2 :
-                            MainActivity.chosen = "Текстиль с принтом";
+                            MainActivity.chosenClient = "Текстиль с принтом";
                             MainActivity.fm = getFragmentManager();
                             MainActivity.ft = MainActivity.fm.beginTransaction();
                             MainActivity.ft.replace(R.id.fragment_container, new FragmentChoose());
@@ -87,7 +87,7 @@ public class FragmentPresents extends Fragment {
                             MainActivity.ft.addToBackStack(null);
                             break;
                         case 3 :
-                            MainActivity.chosen = "Услуги распечатки";
+                            MainActivity.chosenClient = "Услуги распечатки";
                             MainActivity.fm = getFragmentManager();
                             MainActivity.ft = MainActivity.fm.beginTransaction();
                             MainActivity.ft.replace(R.id.fragment_container, new FragmentChoose());
@@ -95,7 +95,7 @@ public class FragmentPresents extends Fragment {
                             MainActivity.ft.addToBackStack(null);
                             break;
                         case 4 :
-                            MainActivity.chosen = "Подарки ручной работы";
+                            MainActivity.chosenClient = "Подарки ручной работы";
                             MainActivity.fm = getFragmentManager();
                             MainActivity.ft = MainActivity.fm.beginTransaction();
                             MainActivity.ft.replace(R.id.fragment_container, new FragmentChoose());

@@ -6,14 +6,16 @@
         android:layout_height="match_parent">
 
         <LinearLayout
-            android:layout_weight="1"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="7dp"
             android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="0dp">
+            android:layout_height="wrap_content">
 
             <ImageView
+
                 android:src="@drawable/profile"
-                android:layout_margin="4dp"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_gravity="center"
@@ -23,30 +25,33 @@
             <LinearLayout
                 android:orientation="vertical"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="wrap_content">
 
                 <TextView
+                    android:maxLines="3"
+                    android:ellipsize="marquee"
                     android:layout_marginLeft="12dp"
                     android:layout_marginStart="12dp"
                     android:id="@+id/client_name"
                     style="@style/TextAppearance.AppCompat.Headline"
                     android:gravity="center_vertical"
-                    android:layout_weight="1"
+                    android:layout_weight="2"
                     android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:text="Имя"
+                    android:layout_height="wrap_content"
+                    android:textIsSelectable="true"
+                    android:text="Имяdddddddddddddddddddddddddddddddddddddddddddddd"
                     />
 
                 <TextView
+                    android:ellipsize="marquee"
                     android:id="@+id/client_category"
                     android:layout_marginLeft="12dp"
-
                     android:layout_marginStart="12dp"
                     style="@style/TextAppearance.AppCompat.Title"
                     android:gravity="center_vertical"
                     android:layout_weight="1"
                     android:layout_width="match_parent"
-                    android:layout_height="0dp"
+                    android:layout_height="wrap_content"
                     android:text="Категория"
                     />
             </LinearLayout>
@@ -54,14 +59,14 @@
 
 
         <ScrollView
+            android:layout_marginTop="14dp"
             android:scrollbars="vertical"
-            android:layout_weight="2"
             android:layout_marginLeft="7sp"
             android:layout_marginRight="7sp"
 
             xmlns:android="http://schemas.android.com/apk/res/android"
             android:layout_width="match_parent"
-            android:layout_height="0dp" >
+            android:layout_height="wrap_content" >
             <LinearLayout
                 android:layout_weight="2"
                 android:layout_width="match_parent"
@@ -84,6 +89,7 @@
                     android:layout_height="match_parent"
                     android:src="@drawable/call_icon"/>
                 <TextView
+                    android:textIsSelectable="true"
                     android:id="@+id/client_phone"
                     android:autoLink="phone"
                     android:gravity="center_vertical"
@@ -112,6 +118,7 @@
                     android:layout_height="match_parent"
                     android:src="@drawable/adress_icon"/>
                 <TextView
+                    android:textIsSelectable="true"
                     android:id="@+id/client_address"
                     android:gravity="center_vertical"
                     android:layout_marginLeft="7dp"
@@ -139,6 +146,7 @@
                     android:layout_height="match_parent"
                     />
                 <TextView
+                    android:textIsSelectable="true"
                     android:id="@+id/client_site"
                     android:gravity="center_vertical"
                     android:autoLink="web"
@@ -167,6 +175,7 @@
                     android:layout_height="match_parent"
                    />
                 <TextView
+                    android:textIsSelectable="true"
                     android:id="@+id/client_vk"
                     android:autoLink="web"
                     android:gravity="center_vertical"
@@ -195,6 +204,7 @@
                     android:layout_height="match_parent"
                    />
                 <TextView
+                    android:textIsSelectable="true"
                     android:id="@+id/client_twitter"
                     android:autoLink="web"
                     android:gravity="center_vertical"
@@ -223,6 +233,7 @@
                     android:layout_height="match_parent"
                    />
                 <TextView
+                    android:textIsSelectable="true"
                     android:id="@+id/client_facebook"
                     android:autoLink="web"
                     android:gravity="center_vertical"
@@ -251,6 +262,7 @@
                     android:layout_height="match_parent"
                     />
                 <TextView
+                    android:textIsSelectable="true"
                     android:id="@+id/client_instagram"
                     android:autoLink="web"
                     android:gravity="center_vertical"
@@ -259,7 +271,7 @@
                     android:layout_weight="4"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:text="+799999999"/>
+                    android:text="+799999999z"/>
 
             </LinearLayout>
 
