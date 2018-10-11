@@ -76,7 +76,7 @@
                 android:layout_weight="1"
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="0dp">
+                android:layout_height="wrap_content">
                 <TextView
                     android:gravity="center"
                     style="@style/TextAppearance.AppCompat.Medium"
@@ -92,7 +92,8 @@
                     style="@style/TextAppearance.AppCompat.Title"
                     android:layout_weight="2"
                     android:layout_width="0dp"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
                     android:text="+799999999"/>
 
             </LinearLayout>
@@ -104,7 +105,7 @@
 
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="0dp">
+                android:layout_height="wrap_content">
                 <TextView
                     android:gravity="center"
                     style="@style/TextAppearance.AppCompat.Medium"
@@ -116,10 +117,10 @@
                     android:id="@+id/client_address"
                     android:gravity="center_vertical"
                     android:layout_marginLeft="7dp"
-                    style="@style/TextAppearance.AppCompat.Subhead"
+                    style="@style/TextAppearance.AppCompat.Title"
                     android:layout_weight="2"
                     android:layout_width="0dp"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:text=""/>
 
             </LinearLayout>
@@ -131,7 +132,7 @@
                 android:layout_weight="1"
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="0dp">
+                android:layout_height="wrap_content">
                 <TextView
                     android:gravity="center"
                     style="@style/TextAppearance.AppCompat.Medium"
@@ -144,10 +145,10 @@
                     android:gravity="center_vertical"
                     android:autoLink="web"
                     android:layout_marginLeft="7dp"
-                    style="@style/TextAppearance.AppCompat.Subhead"
+                    style="@style/TextAppearance.AppCompat.Title"
                     android:layout_weight="2"
                     android:layout_width="0dp"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:text="+799999999"/>
 
             </LinearLayout>
@@ -159,7 +160,7 @@
 
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="0dp">
+                android:layout_height="wrap_content">
                 <TextView
                     android:gravity="center"
                     style="@style/TextAppearance.AppCompat.Medium"
@@ -175,7 +176,7 @@
                     style="@style/TextAppearance.AppCompat.Title"
                     android:layout_weight="2"
                     android:layout_width="0dp"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:text="+799999999"/>
 
             </LinearLayout>
@@ -187,7 +188,7 @@
                 android:id="@+id/twitter_layout"
 
                 android:layout_width="match_parent"
-                android:layout_height="0dp">
+                android:layout_height="wrap_content">
                 <TextView
                     android:gravity="center"
                     style="@style/TextAppearance.AppCompat.Medium"
@@ -203,7 +204,7 @@
                     style="@style/TextAppearance.AppCompat.Title"
                     android:layout_weight="2"
                     android:layout_width="0dp"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:text="+799999999"/>
 
             </LinearLayout>
@@ -215,7 +216,7 @@
                 android:id="@+id/facebook_layout"
 
                 android:layout_width="match_parent"
-                android:layout_height="0dp">
+                android:layout_height="wrap_content">
                 <TextView
                     android:gravity="center"
                     style="@style/TextAppearance.AppCompat.Medium"
@@ -231,7 +232,7 @@
                     style="@style/TextAppearance.AppCompat.Title"
                     android:layout_weight="2"
                     android:layout_width="0dp"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:text="+799999999"/>
 
             </LinearLayout>
@@ -243,7 +244,7 @@
                 android:layout_weight="1"
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="0dp">
+                android:layout_height="wrap_content">
                 <TextView
                     android:gravity="center"
                     style="@style/TextAppearance.AppCompat.Medium"
@@ -259,7 +260,7 @@
                     style="@style/TextAppearance.AppCompat.Title"
                     android:layout_weight="2"
                     android:layout_width="0dp"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:text="+799999999"/>
 
             </LinearLayout>

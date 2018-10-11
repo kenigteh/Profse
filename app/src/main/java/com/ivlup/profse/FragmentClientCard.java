@@ -47,6 +47,7 @@ public class FragmentClientCard extends Fragment {
         TextView cCategory = view.findViewById(R.id.client_category);
         cCategory.setText(category);
 
+
         TextView cPhone = view.findViewById(R.id.client_phone);
         cPhone.setText(MainActivity.mapClients.get(name).getPhone());
 
@@ -70,25 +71,25 @@ public class FragmentClientCard extends Fragment {
 
 
         LinearLayout phone_layout = (LinearLayout) view.findViewById(R.id.number_layout);
-        if (MainActivity.mapClients.get(name).getPhone().isEmpty()) phone_layout.setVisibility(View.INVISIBLE);
+        if (String.valueOf(cPhone.getText()).isEmpty()) phone_layout.setVisibility(View.GONE);
 
         LinearLayout adress_layout = (LinearLayout) view.findViewById(R.id.address_layout);
-        if (MainActivity.mapClients.get(name).getAddress().isEmpty()) adress_layout.setVisibility(View.INVISIBLE);
+        if (String.valueOf(cAddress.getText()).isEmpty()) adress_layout.setVisibility(View.GONE);
 
         LinearLayout site_layout = (LinearLayout) view.findViewById(R.id.site_layout);
-        if (MainActivity.mapClients.get(name).getSite().isEmpty()) site_layout.setVisibility(View.INVISIBLE);
+        if (String.valueOf(cSite.getText()).isEmpty()) site_layout.setVisibility(View.GONE);
 
         LinearLayout vk_layout = (LinearLayout) view.findViewById(R.id.vk_layout);
-        if (MainActivity.mapClients.get(name).getVk().isEmpty()) vk_layout.setVisibility(View.INVISIBLE);
+        if (String.valueOf(cVk.getText()).isEmpty()) vk_layout.setVisibility(View.GONE);
 
         LinearLayout twitter_layout = (LinearLayout) view.findViewById(R.id.twitter_layout);
-        if (MainActivity.mapClients.get(name).getTwitter().isEmpty()) twitter_layout.setVisibility(View.INVISIBLE);
+        if (String.valueOf(cTwitter.getText()).isEmpty()) twitter_layout.setVisibility(View.GONE);
 
         LinearLayout facebook_layout = (LinearLayout) view.findViewById(R.id.facebook_layout);
-        if (MainActivity.mapClients.get(name).getFacebook().isEmpty()) facebook_layout.setVisibility(View.INVISIBLE);
+        if (String.valueOf(cFacebook.getText()).isEmpty()) facebook_layout.setVisibility(View.GONE);
 
         LinearLayout instagram_layout = (LinearLayout) view.findViewById(R.id.instagram_layout);
-        if (MainActivity.mapClients.get(name).getInstagram().isEmpty()) instagram_layout.setVisibility(View.INVISIBLE);
+        if (String.valueOf(cInstagram.getText()).isEmpty()) instagram_layout.setVisibility(View.GONE);
 
 
 
