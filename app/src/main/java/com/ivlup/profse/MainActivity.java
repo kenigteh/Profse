@@ -34,18 +34,20 @@ public class MainActivity extends AppCompatActivity {
     public static String chosen;
     public static String chosenClient;//
     public static String chosenName;
-    public static ArrayList<Client> clients = new ArrayList();
+    public static ArrayList<Client> clients          = new ArrayList();
     public static ArrayList<String> clientCategories = new ArrayList();
     public static FragmentManager fm;
     public static FragmentTransaction ft;
-    private DatabaseHelper mDBHelper;
-    private SQLiteDatabase mDb;
-    private Fragment FragmentMenu;
-    boolean doubleBackToExitPressedOnce = false;
-    private DrawerLayout mDrawerLayout;
+    private       DatabaseHelper mDBHelper;
+    private       SQLiteDatabase mDb;
+    private       Fragment FragmentMenu;
+    boolean       doubleBackToExitPressedOnce = false;
+    private       DrawerLayout mDrawerLayout;
+    public        FrameLayout frame;
 
     public static Map<String, Client> mapClients = new HashMap<String, Client>(1000);
-    FrameLayout frame;
+
+
 
     public void openDrawer(){
         mDrawerLayout.openDrawer(mDrawerLayout);
@@ -168,7 +170,7 @@ public class MainActivity extends AppCompatActivity {
                     cursor.getString(7),
                     cursor.getString(8),
                     cursor.getString(9));
-
+//ARTJEM PIDOR
             clients.add(client);
             clientCategories.add(client.getCategory());
             mapClients.put(client.getName(),client);
@@ -176,5 +178,4 @@ public class MainActivity extends AppCompatActivity {
             cursor.moveToNext();
         }
     }
-
 }
