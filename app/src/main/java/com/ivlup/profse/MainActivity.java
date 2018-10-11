@@ -32,7 +32,7 @@ import java.util.Map;
 public class MainActivity extends AppCompatActivity {
 
     public static String chosen;
-    public static String chosenClient;//
+    public static String chosenClient;
     public static String chosenName;
     public static ArrayList<Client> clients          = new ArrayList();
     public static ArrayList<String> clientCategories = new ArrayList();
