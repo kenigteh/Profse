@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.database.Cursor;
 import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
+import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.Fragment;
@@ -33,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
     public static String chosenName;
     public static ArrayList<Contractor> contractors = new ArrayList();
     public static ArrayList<String> contractorCategories = new ArrayList();
+
     public static FragmentManager fm;
     public static FragmentTransaction ft;
     private       DatabaseHelper mDBHelper;
@@ -124,7 +126,7 @@ public class MainActivity extends AppCompatActivity {
         navigationView.setNavigationItemSelectedListener(
                 new NavigationView.OnNavigationItemSelectedListener() {
                     @Override
-                    public boolean onNavigationItemSelected(MenuItem menuItem) {
+                    public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
                         // set item as selected to persist highlight
 
                         int id = menuItem.getItemId();

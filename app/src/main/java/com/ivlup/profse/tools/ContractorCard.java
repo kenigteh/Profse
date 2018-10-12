@@ -20,7 +20,7 @@ public class ContractorCard extends BindableItem<ItemClientsBinding> {
     @Override
     public void bind(@NonNull final ItemClientsBinding viewBinding, int position) {
         // Populate the data into the template view using the data object
-        viewBinding.clientName.setText(contractor.getName());
+        viewBinding.contractorName.setText(contractor.getName());
         viewBinding.cardClient.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <ScrollView
+        android:layout_marginTop="14dp"
+        android:scrollbars="vertical"
+        android:layout_marginLeft="7sp"
+        android:layout_marginRight="7sp"
+
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+
+            <LinearLayout
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+                <TextView
+                    android:id="@+id/request_first"
+                    style="@style/TextAppearance.AppCompat.Subhead"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="Тип продукции"/>
+                <EditText
+
+                    android:id="@+id/request_type"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="7dp"
+                    style="@style/TextAppearance.AppCompat.Small"
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:maxLines="1"
+
+                    android:hint="Введите тип:"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+                <TextView
+                    android:id="@+id/request_second"
+                    style="@style/TextAppearance.AppCompat.Subhead"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="Срочность"/>
+                <EditText
+
+                    android:id="@+id/request_urgent"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="7dp"
+                    style="@style/TextAppearance.AppCompat.Small"
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:maxLines="2"
+
+                    android:hint="Введите срочность:"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/gone_third_request"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+                <TextView
+                    android:id="@+id/request_third"
+                    style="@style/TextAppearance.AppCompat.Subhead"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="Цвет"/>
+                <EditText
+
+                    android:id="@+id/request_color"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="7dp"
+                    style="@style/TextAppearance.AppCompat.Small"
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:maxLines="2"
+
+                    android:hint="Введите цвет:"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/gone_fourth_request"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+                <TextView
+                    android:id="@+id/request_fourth"
+                    style="@style/TextAppearance.AppCompat.Subhead"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="Тираж"/>
+                <EditText
+
+                    android:id="@+id/request_edition"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="7dp"
+                    style="@style/TextAppearance.AppCompat.Small"
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:maxLines="2"
+
+                    android:hint="Введите тираж:"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+                <TextView
+                    android:id="@+id/request_last"
+                    style="@style/TextAppearance.AppCompat.Subhead"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="Контактный номер"/>
+                <EditText
+
+                    android:id="@+id/request_phone"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="7dp"
+                    style="@style/TextAppearance.AppCompat.Small"
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:maxLines="1"
+                    android:inputType="number|phone"
+                    android:hint="Введите телефон:"/>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Благодарим за доверие. Наш менеджер свяжется с вами в ближайшее время, подобрав оптимальный и проверенный вариант"/>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/send_request"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="end"
+        android:text="Отправить заявку" />
+
+</RelativeLayout>

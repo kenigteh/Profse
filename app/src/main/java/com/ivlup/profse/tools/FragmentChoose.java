@@ -11,21 +11,11 @@ import android.widget.Toast;
 
 import com.ivlup.profse.MainActivity;
 import com.ivlup.profse.R;
+import com.ivlup.profse.fragment.FragmentRequest;
 
 public class FragmentChoose extends Fragment {
 
-    public void sendEmail(String chosenVar) {
-        Intent i = new Intent(Intent.ACTION_SEND);
-        i.setType("message/rfc822");
-        i.putExtra(Intent.EXTRA_EMAIL  , new String[]{"info_profse@mail.ru"});
-        i.putExtra(Intent.EXTRA_SUBJECT, "Profse заявка: "+chosenVar);
-        i.putExtra(Intent.EXTRA_TEXT   , "Напишите вашу заявку здесь: ");
-        try {
-            getActivity().startActivity(Intent.createChooser(i, "Отправить заявку..."));
-        } catch (android.content.ActivityNotFoundException ex) {
-            Toast.makeText( getActivity(), "Нет допустимого e-mail клиента", Toast.LENGTH_SHORT).show();
-        }
-    }
+
 
     public void onResume(){
         super.onResume();
@@ -53,7 +43,17 @@ public class FragmentChoose extends Fragment {
         btsend.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                sendEmail(MainActivity.chosen);
+                //sendEmail(MainActivity.chosen);
+
+                MainActivity.fm = getFragmentManager();
+                MainActivity.ft = MainActivity.fm.beginTransaction();
+
+               // if (MainActivity.c)
+                MainActivity.ft.replace(R.id.fragment_container, new FragmentRequest());
+
+
+                MainActivity.ft.commit();
+                MainActivity.ft.addToBackStack(null);
             }
         });
         Button btchoose = view.findViewById(R.id.choose);

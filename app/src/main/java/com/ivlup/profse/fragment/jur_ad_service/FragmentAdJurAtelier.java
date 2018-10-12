@@ -11,6 +11,7 @@ import android.widget.GridLayout;
 import com.ivlup.profse.MainActivity;
 import com.ivlup.profse.R;
 import com.ivlup.profse.tools.FragmentChoose;
+import com.ivlup.profse.tools.FragmentListContractors;
 
 public class FragmentAdJurAtelier extends Fragment {
     private GridLayout mainGrid;
@@ -65,7 +66,7 @@ public class FragmentAdJurAtelier extends Fragment {
                                 MainActivity.chosenClient = "Ателье, шейные платки";
                                 MainActivity.fm = getFragmentManager();
                                 MainActivity.ft = MainActivity.fm.beginTransaction();
-                                MainActivity.ft.replace(R.id.fragment_container, new FragmentChoose());
+                                MainActivity.ft.replace(R.id.fragment_container, new FragmentListContractors());
                                 MainActivity.ft.commit();
                                 MainActivity.ft.addToBackStack(null);
                                 break;
@@ -73,7 +74,7 @@ public class FragmentAdJurAtelier extends Fragment {
                                 MainActivity.chosenClient = "Ателье, шевроны";
                                 MainActivity.fm = getFragmentManager();
                                 MainActivity.ft = MainActivity.fm.beginTransaction();
-                                MainActivity.ft.replace(R.id.fragment_container, new FragmentChoose());
+                                MainActivity.ft.replace(R.id.fragment_container, new FragmentListContractors());
                                 MainActivity.ft.commit();
                                 MainActivity.ft.addToBackStack(null);
                                 break;
@@ -81,7 +82,7 @@ public class FragmentAdJurAtelier extends Fragment {
                                 MainActivity.chosenClient = "Ателье, корпоративный стиль";
                                 MainActivity.fm = getFragmentManager();
                                 MainActivity.ft = MainActivity.fm.beginTransaction();
-                                MainActivity.ft.replace(R.id.fragment_container, new FragmentChoose());
+                                MainActivity.ft.replace(R.id.fragment_container, new FragmentListContractors());
                                 MainActivity.ft.commit();
                                 MainActivity.ft.addToBackStack(null);
                                 break;
