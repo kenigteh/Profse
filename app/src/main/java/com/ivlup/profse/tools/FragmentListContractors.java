@@ -8,7 +8,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -21,7 +20,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 
-public class ClientListFragment extends Fragment {
+public class FragmentListContractors extends Fragment {
 
     private static RecyclerView recyclerView;
     private RecyclerView.LayoutManager layoutManager;
@@ -56,14 +55,14 @@ public class ClientListFragment extends Fragment {
 
         ArrayList<String> names = new ArrayList<>();
 
-       // for (Client st : MainActivity.clients) {
+       // for (Contractor st : MainActivity.contractors) {
         //    if (st.getCategory().equals(MainActivity.chosenClient))
-        //        items.add(new ClientItem(st) );
+        //        items.add(new ContractorCard(st) );
        // }
 
-       for (int i = 0; i < MainActivity.clients.size(); i++) {
-           if (MainActivity.clients.get(i).getCategory().equals(MainActivity.chosenClient)) {
-               names.add(MainActivity.clients.get(i).getName());
+       for (int i = 0; i < MainActivity.contractors.size(); i++) {
+           if (MainActivity.contractors.get(i).getCategory().equals(MainActivity.chosenClient)) {
+               names.add(MainActivity.contractors.get(i).getName());
            }
        }
         Set<String> hs = new HashSet<>();
@@ -100,4 +99,4 @@ public class ClientListFragment extends Fragment {
 
     }
 }
-//class ClientListFragment extends RecyclerView.ViewHolder implements View.OnclickListener, View.OnLongClickListener
+//class FragmentListContractors extends RecyclerView.ViewHolder implements View.OnclickListener, View.OnLongClickListener

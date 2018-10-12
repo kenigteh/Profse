@@ -17,13 +17,10 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.LinearLayout;
-import android.widget.Toast;
 
-import com.ivlup.profse.fragment.all_service.FragmentAllServices;
-import com.ivlup.profse.tools.Client;
+import com.ivlup.profse.tools.Contractor;
 import com.ivlup.profse.tools.DatabaseHelper;
 
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
@@ -34,8 +31,8 @@ public class MainActivity extends AppCompatActivity {
     public static String chosen;
     public static String chosenClient;
     public static String chosenName;
-    public static ArrayList<Client> clients          = new ArrayList();
-    public static ArrayList<String> clientCategories = new ArrayList();
+    public static ArrayList<Contractor> contractors = new ArrayList();
+    public static ArrayList<String> contractorCategories = new ArrayList();
     public static FragmentManager fm;
     public static FragmentTransaction ft;
     private       DatabaseHelper mDBHelper;
@@ -45,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
     private       DrawerLayout mDrawerLayout;
     public        FrameLayout frame;
 
-    public static Map<String, Client> mapClients = new HashMap<String, Client>(1000);
+    public static Map<String, Contractor> mapContractors = new HashMap<String, Contractor>(1000);
 
 
 
@@ -154,7 +151,7 @@ public class MainActivity extends AppCompatActivity {
         cursor.moveToFirst();
         while (!cursor.isAfterLast()) {
 
-            Client client = new Client(
+            Contractor contractor = new Contractor(
 
                     cursor.getString(0),
                     cursor.getString(1),
@@ -167,9 +164,9 @@ public class MainActivity extends AppCompatActivity {
                     cursor.getString(8),
                     cursor.getString(9));
 //ARTJEM PIDOR
-            clients.add(client);
-            clientCategories.add(client.getCategory());
-            mapClients.put(client.getName(),client);
+            contractors.add(contractor);
+            contractorCategories.add(contractor.getCategory());
+            mapContractors.put(contractor.getName(), contractor);
 
             cursor.moveToNext();
         }

@@ -9,18 +9,18 @@ import com.ivlup.profse.databinding.ItemClientsBinding;
 
 import com.ivlup.profse.R;
 
-public class ClientItem extends BindableItem<ItemClientsBinding> {
+public class ContractorCard extends BindableItem<ItemClientsBinding> {
 
-    private Client client;
+    private Contractor contractor;
 
-    public ClientItem(Client client) {
-        this.client = client;
+    public ContractorCard(Contractor contractor) {
+        this.contractor = contractor;
     }
 
     @Override
     public void bind(@NonNull final ItemClientsBinding viewBinding, int position) {
         // Populate the data into the template view using the data object
-        viewBinding.clientName.setText(client.getName());
+        viewBinding.clientName.setText(contractor.getName());
         viewBinding.cardClient.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

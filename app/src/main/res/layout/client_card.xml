@@ -34,7 +34,7 @@
                     android:focusableInTouchMode="true"
                     android:layout_marginLeft="12dp"
                     android:layout_marginStart="12dp"
-                    android:id="@+id/client_name"
+                    android:id="@+id/contractor_name"
                     style="@style/TextAppearance.AppCompat.Headline"
                     android:gravity="center_vertical"
                     android:layout_weight="2"
@@ -46,7 +46,7 @@
 
                 <TextView
                     android:ellipsize="marquee"
-                    android:id="@+id/client_category"
+                    android:id="@+id/contractor_category"
                     android:layout_marginLeft="12dp"
                     android:layout_marginStart="12dp"
                     style="@style/TextAppearance.AppCompat.Title"
@@ -92,7 +92,7 @@
                     android:src="@drawable/call_icon"/>
                 <TextView
                     android:textIsSelectable="true"
-                    android:id="@+id/client_phone"
+                    android:id="@+id/contractor_phone"
                     android:autoLink="phone"
                     android:gravity="center_vertical"
                     android:layout_marginLeft="7dp"
@@ -121,7 +121,7 @@
                     android:src="@drawable/adress_icon"/>
                 <TextView
                     android:textIsSelectable="true"
-                    android:id="@+id/client_address"
+                    android:id="@+id/contractor_address"
                     android:gravity="center_vertical"
                     android:layout_marginLeft="7dp"
                     style="@style/TextAppearance.AppCompat.Title"
@@ -149,7 +149,7 @@
                     />
                 <TextView
                     android:textIsSelectable="true"
-                    android:id="@+id/client_site"
+                    android:id="@+id/contractor_site"
                     android:gravity="center_vertical"
                     android:autoLink="web"
                     android:layout_marginLeft="7dp"
@@ -178,7 +178,7 @@
                    />
                 <TextView
                     android:textIsSelectable="true"
-                    android:id="@+id/client_vk"
+                    android:id="@+id/contractor_vk"
                     android:autoLink="web"
                     android:gravity="center_vertical"
                     android:layout_marginLeft="7dp"
@@ -207,7 +207,7 @@
                    />
                 <TextView
                     android:textIsSelectable="true"
-                    android:id="@+id/client_twitter"
+                    android:id="@+id/contractor_twitter"
                     android:autoLink="web"
                     android:gravity="center_vertical"
                     android:layout_marginLeft="7dp"
@@ -236,7 +236,7 @@
                    />
                 <TextView
                     android:textIsSelectable="true"
-                    android:id="@+id/client_facebook"
+                    android:id="@+id/contractor_facebook"
                     android:autoLink="web"
                     android:gravity="center_vertical"
                     android:layout_marginLeft="7dp"
@@ -265,7 +265,7 @@
                     />
                 <TextView
                     android:textIsSelectable="true"
-                    android:id="@+id/client_instagram"
+                    android:id="@+id/contractor_instagram"
                     android:autoLink="web"
                     android:gravity="center_vertical"
                     android:layout_marginLeft="7dp"

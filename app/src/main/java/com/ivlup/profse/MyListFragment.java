@@ -9,7 +9,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-import com.ivlup.profse.tools.ClientListFragment;
+import com.ivlup.profse.tools.FragmentListContractors;
 
 import java.util.Arrays;
 import java.util.HashMap;
@@ -66,7 +66,7 @@ private Map<String, List<String>> hashMap;
 
                 MainActivity.fm = getFragmentManager();
                 MainActivity.ft = MainActivity.fm.beginTransaction();
-                MainActivity.ft.replace(R.id.fragment_container, new ClientListFragment());
+                MainActivity.ft.replace(R.id.fragment_container, new FragmentListContractors());
                 MainActivity.ft.commit();
                 MainActivity.ft.addToBackStack(null);
             }

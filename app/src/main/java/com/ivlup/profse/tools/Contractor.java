@@ -3,7 +3,7 @@ package com.ivlup.profse.tools;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Client {
+public class Contractor {
 
     private String name;
     private String category;
@@ -16,7 +16,7 @@ public class Client {
     private String instagram;
     private String discount;
 
-    public Client(String name, String category, String phone, String address, String site, String vk, String twitter, String facebook, String instagram, String discount) {
+    public Contractor(String name, String category, String phone, String address, String site, String vk, String twitter, String facebook, String instagram, String discount) {
         this.name = name;
         this.category = category;
         this.phone = phone;

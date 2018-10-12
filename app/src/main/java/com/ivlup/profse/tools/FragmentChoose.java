@@ -10,7 +10,6 @@ import android.widget.Button;
 import android.widget.Toast;
 
 import com.ivlup.profse.MainActivity;
-import com.ivlup.profse.MyListFragment;
 import com.ivlup.profse.R;
 
 public class FragmentChoose extends Fragment {
@@ -85,7 +84,7 @@ public class FragmentChoose extends Fragment {
 
                     MainActivity.fm = getFragmentManager();
                     MainActivity.ft = MainActivity.fm.beginTransaction();
-                    MainActivity.ft.replace(R.id.fragment_container, new ClientListFragment());
+                    MainActivity.ft.replace(R.id.fragment_container, new FragmentListContractors());
                     MainActivity.ft.commit();
                     MainActivity.ft.addToBackStack(null);
                 }

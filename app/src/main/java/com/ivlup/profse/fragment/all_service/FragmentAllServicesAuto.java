@@ -1,6 +1,5 @@
 package com.ivlup.profse.fragment.all_service;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -14,7 +13,7 @@ import android.widget.GridLayout;
 import com.ivlup.profse.MainActivity;
 import com.ivlup.profse.MyListFragment;
 import com.ivlup.profse.R;
-import com.ivlup.profse.tools.ClientListFragment;
+import com.ivlup.profse.tools.FragmentListContractors;
 
 public class FragmentAllServicesAuto extends Fragment {
 
@@ -65,7 +64,7 @@ public class FragmentAllServicesAuto extends Fragment {
                             MainActivity.chosenClient = "Диагностика";
                             MainActivity.fm = getFragmentManager();
                             MainActivity.ft = MainActivity.fm.beginTransaction();
-                            MainActivity.ft.replace(R.id.fragment_container, new ClientListFragment());
+                            MainActivity.ft.replace(R.id.fragment_container, new FragmentListContractors());
                             MainActivity.ft.commit();
                             MainActivity.ft.addToBackStack(null);
                             break;
@@ -73,7 +72,7 @@ public class FragmentAllServicesAuto extends Fragment {
                             MainActivity.chosenClient = "Дилеры";
                             MainActivity.fm = getFragmentManager();
                             MainActivity.ft = MainActivity.fm.beginTransaction();
-                            MainActivity.ft.replace(R.id.fragment_container, new ClientListFragment());
+                            MainActivity.ft.replace(R.id.fragment_container, new FragmentListContractors());
                             MainActivity.ft.commit();
                             MainActivity.ft.addToBackStack(null);
                             break;
@@ -81,7 +80,7 @@ public class FragmentAllServicesAuto extends Fragment {
                             MainActivity.chosenClient = "Шиномонтаж";
                             MainActivity.fm = getFragmentManager();
                             MainActivity.ft = MainActivity.fm.beginTransaction();
-                            MainActivity.ft.replace(R.id.fragment_container, new ClientListFragment());
+                            MainActivity.ft.replace(R.id.fragment_container, new FragmentListContractors());
                             MainActivity.ft.commit();
                             MainActivity.ft.addToBackStack(null);
                             break;
@@ -89,7 +88,7 @@ public class FragmentAllServicesAuto extends Fragment {
                             MainActivity.chosenClient = "Электрика";
                             MainActivity.fm = getFragmentManager();
                             MainActivity.ft = MainActivity.fm.beginTransaction();
-                            MainActivity.ft.replace(R.id.fragment_container, new ClientListFragment());
+                            MainActivity.ft.replace(R.id.fragment_container, new FragmentListContractors());
                             MainActivity.ft.commit();
                             MainActivity.ft.addToBackStack(null);
                             break;
@@ -97,7 +96,7 @@ public class FragmentAllServicesAuto extends Fragment {
                             MainActivity.chosenClient = "Подвеска, ходовая";
                             MainActivity.fm = getFragmentManager();
                             MainActivity.ft = MainActivity.fm.beginTransaction();
-                            MainActivity.ft.replace(R.id.fragment_container, new ClientListFragment());
+                            MainActivity.ft.replace(R.id.fragment_container, new FragmentListContractors());
                             MainActivity.ft.commit();
                             MainActivity.ft.addToBackStack(null);
                             break;
@@ -105,7 +104,7 @@ public class FragmentAllServicesAuto extends Fragment {
                             MainActivity.chosenClient = "Кузовные работы";
                             MainActivity.fm = getFragmentManager();
                             MainActivity.ft = MainActivity.fm.beginTransaction();
-                            MainActivity.ft.replace(R.id.fragment_container, new ClientListFragment());
+                            MainActivity.ft.replace(R.id.fragment_container, new FragmentListContractors());
                             MainActivity.ft.commit();
                             MainActivity.ft.addToBackStack(null);
                             break;
@@ -113,7 +112,7 @@ public class FragmentAllServicesAuto extends Fragment {
                             MainActivity.chosenClient = "Моторные работы";
                             MainActivity.fm = getFragmentManager();
                             MainActivity.ft = MainActivity.fm.beginTransaction();
-                            MainActivity.ft.replace(R.id.fragment_container, new ClientListFragment());
+                            MainActivity.ft.replace(R.id.fragment_container, new FragmentListContractors());
                             MainActivity.ft.commit();
                             MainActivity.ft.addToBackStack(null);
                             break;

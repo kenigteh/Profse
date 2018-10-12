@@ -14,7 +14,7 @@ import com.ivlup.profse.R;
 
 import java.util.ArrayList;
 
-public class ClientAdapter extends RecyclerView.Adapter<ClientAdapter.MyViewHolder> {
+public class ContractorAdapter extends RecyclerView.Adapter<ContractorAdapter.MyViewHolder> {
 
 
     private ArrayList clientDataSet;
@@ -27,13 +27,13 @@ public class ClientAdapter extends RecyclerView.Adapter<ClientAdapter.MyViewHold
 
         public MyViewHolder(View itemView){
             super (itemView);
-            this.textName = itemView.findViewById(R.id.client_name);
+            this.textName = itemView.findViewById(R.id.contractor_name);
             this.imageClient = itemView.findViewById(R.id.avatar);
         }
 
     }
 
-    public ClientAdapter(Context context, ArrayList clients){
+    public ContractorAdapter(Context context, ArrayList clients){
         this.clientDataSet = clients;
         mContext=context;
     }
@@ -53,7 +53,7 @@ public class ClientAdapter extends RecyclerView.Adapter<ClientAdapter.MyViewHold
         final TextView textViewName = holder.textName;
         //ImageView imageViewHero = holder.imageHero;
 
-        textViewName.setText((CharSequence) MainActivity.mapClients.get(MainActivity.chosenClient));
+        textViewName.setText((CharSequence) MainActivity.mapContractors.get(MainActivity.chosenClient));
 
         //textViewUniverse.setText(clientDataSet.get(listPosition).getUniverse());
 
