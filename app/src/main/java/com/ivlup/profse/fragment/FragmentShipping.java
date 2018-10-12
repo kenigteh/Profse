@@ -62,7 +62,7 @@ public class FragmentShipping extends Fragment {
                     switch (finalI) {
 
                         case 0 :
-                            MainActivity.chosen = "Курьер";
+                            MainActivity.chosenClient = "Курьер";
                             MainActivity.fm = getFragmentManager();
                             MainActivity.ft = MainActivity.fm.beginTransaction();
                             MainActivity.ft.replace(R.id.fragment_container, new FragmentChoose());
@@ -70,7 +70,7 @@ public class FragmentShipping extends Fragment {
                             MainActivity.ft.addToBackStack(null);
                             break;
                         case 1 :
-                            MainActivity.chosen = "Грузоперевозки";
+                            MainActivity.chosenClient = "Грузоперевозки";
                             MainActivity.fm = getFragmentManager();
                             MainActivity.ft = MainActivity.fm.beginTransaction();
                             MainActivity.ft.replace(R.id.fragment_container, new FragmentChoose());
@@ -78,7 +78,7 @@ public class FragmentShipping extends Fragment {
                             MainActivity.ft.addToBackStack(null);
                             break;
                         case 2 :
-                            MainActivity.chosen = "Доставка ценных грузов";
+                            MainActivity.chosenClient = "Доставка ценных грузов";
                             MainActivity.fm = getFragmentManager();
                             MainActivity.ft = MainActivity.fm.beginTransaction();
                             MainActivity.ft.replace(R.id.fragment_container, new FragmentChoose());
@@ -86,7 +86,7 @@ public class FragmentShipping extends Fragment {
                             MainActivity.ft.addToBackStack(null);
                             break;
                         case 3 :
-                            MainActivity.chosen = "Доставка цветов, шаров, подарков";
+                            MainActivity.chosenClient = "Доставка цветов, шаров, подарков";
                             MainActivity.fm = getFragmentManager();
                             MainActivity.ft = MainActivity.fm.beginTransaction();
                             MainActivity.ft.replace(R.id.fragment_container, new FragmentChoose());
@@ -94,7 +94,7 @@ public class FragmentShipping extends Fragment {
                             MainActivity.ft.addToBackStack(null);
                             break;
                         case 4 :
-                            MainActivity.chosen = "Доставка угля, дров";
+                            MainActivity.chosenClient = "Доставка угля, дров";
                             MainActivity.fm = getFragmentManager();
                             MainActivity.ft = MainActivity.fm.beginTransaction();
                             MainActivity.ft.replace(R.id.fragment_container, new FragmentChoose());
@@ -102,7 +102,7 @@ public class FragmentShipping extends Fragment {
                             MainActivity.ft.addToBackStack(null);
                             break;
                         case 5 :
-                            MainActivity.chosen = "Доставка песка, грунта и пр";
+                            MainActivity.chosenClient = "Доставка песка, грунта и пр";
                             MainActivity.fm = getFragmentManager();
                             MainActivity.ft = MainActivity.fm.beginTransaction();
                             MainActivity.ft.replace(R.id.fragment_container, new FragmentChoose());

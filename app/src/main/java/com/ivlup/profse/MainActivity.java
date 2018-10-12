@@ -59,12 +59,8 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onSupportNavigateUp(){
-        FragmentMenu test = (FragmentMenu) getSupportFragmentManager().findFragmentByTag("detail");
-        if (test != null && test.isVisible()) {
-            openDrawer();
-        }
 
-        else if (getFragmentManager().getBackStackEntryCount() == 1) {
+         if (getFragmentManager().getBackStackEntryCount() == 1) {
             finish();
             moveTaskToBack(false);
         }

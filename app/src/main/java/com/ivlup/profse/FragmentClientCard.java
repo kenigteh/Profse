@@ -1,12 +1,15 @@
 package com.ivlup.profse;
 
 import android.os.Bundle;
+import android.support.design.button.MaterialButton;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.AppCompatButton;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -91,7 +94,17 @@ public class FragmentClientCard extends Fragment {
         LinearLayout instagram_layout = (LinearLayout) view.findViewById(R.id.instagram_layout);
         if (String.valueOf(cInstagram.getText()).isEmpty()) instagram_layout.setVisibility(View.GONE);
 
-
-
+        AppCompatButton discountBt = (AppCompatButton) view.findViewById(R.id.get_discount);
+        String discountTxt = String.valueOf(MainActivity.mapClients.get(name).getDiscount());
+        discountBt.setVisibility(View.GONE);
+        if (discountTxt.equals("Согласен всем")) {
+            discountBt.setVisibility(View.VISIBLE);
+            discountBt.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Toast.makeText(getContext(), "Скидка получена! Перейдите в профиль, чтобы её увидеть" , Toast.LENGTH_LONG).show();
+                }
+            });
+        }
     }
 }

@@ -30,6 +30,8 @@
                 <TextView
                     android:maxLines="3"
                     android:ellipsize="marquee"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
                     android:layout_marginLeft="12dp"
                     android:layout_marginStart="12dp"
                     android:id="@+id/client_name"
@@ -39,7 +41,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textIsSelectable="true"
-                    android:text="Имяdddddddddddddddddddddddddddddddddddddddddddddd"
+                    android:text="Имя"
                     />
 
                 <TextView
@@ -276,8 +278,14 @@
             </LinearLayout>
 
 
-
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/get_discount"
+                    android:layout_gravity="end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="получить скидку" />
             </LinearLayout>
         </ScrollView>
+
 
 </LinearLayout>
