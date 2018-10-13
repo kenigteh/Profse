@@ -4,7 +4,6 @@
     package="com.ivlup.profse"
     >
     <uses-permission android:name="android.permission.INTERNET"/>
-
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -16,8 +15,7 @@
         android:largeHeap="true"
         tools:ignore="GoogleAppIndexingWarning"
         >
-
-        <activity android:name=".LoginActivity"
+        <activity android:name=".activity.LoginActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -25,25 +23,28 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".MainActivity"
+        <activity android:name=".activity.MainActivity"
             android:screenOrientation="portrait"
             android:configChanges="orientation|keyboardHidden">
 
-            <meta-data android:name="android.app.searchable"
-                android:resource="@xml/searchable" />
+
         </activity>
 
-        <activity android:name=".SearchableActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.SEARCH" />
-            </intent-filter>
-            <meta-data
-                android:name="android.app.searchable"
-                android:resource="@xml/searchable"/>
-        </activity>
+        <activity android:name=".activity.SearchableActivity"  >
 
-        <activity android:name=".ProfileActivity">
+        <intent-filter>
+
+            <action android:name="android.intent.action.SEARCH" />
+
+        </intent-filter>
+
+    </activity>
+
+        <activity android:name=".activity.ProfileActivity"
+            >
+
 
         </activity>
     </application>
+
 </manifest>

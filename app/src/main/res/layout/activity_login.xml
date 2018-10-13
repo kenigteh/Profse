@@ -2,7 +2,10 @@
 <android.support.constraint.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
     android:layout_height="match_parent">
+<<<<<<< HEAD
 
+=======
+>>>>>>> c650ef856d455fda0771b58b37c85d8b6287f41b
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -14,12 +17,18 @@
             android:text="@string/signed_out"
             android:textColor="@android:color/black"
             android:textSize="14sp" />
+<<<<<<< HEAD
 
+=======
+>>>>>>> c650ef856d455fda0771b58b37c85d8b6287f41b
         <com.google.android.gms.common.SignInButton
             android:id="@+id/sign_in_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
     </LinearLayout>
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> c650ef856d455fda0771b58b37c85d8b6287f41b
 </android.support.constraint.ConstraintLayout>

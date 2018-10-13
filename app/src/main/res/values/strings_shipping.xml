@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="shipping">
+        <item>Курьер</item>
+        <item>Грузоперевозки</item>
+        <item>Доставка ценных грузов</item>
+        <item>Доставка цветов, шаров, подарков</item>
+        <item>Доставка угля, дров</item>
+        <item>Доставка песка, грунта и пр</item>
+
+    </string-array>
+
+</resources>
