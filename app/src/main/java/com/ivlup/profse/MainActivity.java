@@ -17,8 +17,10 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
+import com.ivlup.profse.backend.User;
 import com.ivlup.profse.fragment.all_service.FragmentAllServices;
 import com.ivlup.profse.tools.Client;
 import com.ivlup.profse.tools.DatabaseHelper;
@@ -34,18 +36,21 @@ public class MainActivity extends AppCompatActivity {
     public static String chosen;
     public static String chosenClient;//
     public static String chosenName;
+
     public static ArrayList<Client> clients = new ArrayList();
     public static ArrayList<String> clientCategories = new ArrayList();
+    public static Map<String, Client> mapClients = new HashMap<String, Client>(1000);
+
     public static FragmentManager fm;
     public static FragmentTransaction ft;
+    FrameLayout frame;
+
     private DatabaseHelper mDBHelper;
     private SQLiteDatabase mDb;
     private Fragment FragmentMenu;
     boolean doubleBackToExitPressedOnce = false;
     private DrawerLayout mDrawerLayout;
 
-    public static Map<String, Client> mapClients = new HashMap<String, Client>(1000);
-    FrameLayout frame;
 
     public void openDrawer(){
         mDrawerLayout.openDrawer(mDrawerLayout);
@@ -117,6 +122,10 @@ public class MainActivity extends AppCompatActivity {
 
         NavigationView navigationView = findViewById(R.id.nav_view);
         View headerview = navigationView.getHeaderView(0);
+
+        TextView navName = headerview.findViewById(R.id.nav_name);
+        navName.setText(User.name);
+
         LinearLayout profileHeader = (LinearLayout) headerview.findViewById(R.id.profile_header);
         profileHeader.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -147,6 +156,7 @@ public class MainActivity extends AppCompatActivity {
                         return true;
                     }
                 });
+
     }
 
     private void fetchClients() {
