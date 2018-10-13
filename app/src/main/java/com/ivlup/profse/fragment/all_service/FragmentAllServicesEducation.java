@@ -1,6 +1,5 @@
 package com.ivlup.profse.fragment.all_service;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -11,8 +10,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.GridLayout;
 
-import com.ivlup.profse.MainActivity;
-import com.ivlup.profse.MyListFragment;
+import com.ivlup.profse.activity.MainActivity;
+import com.ivlup.profse.fragment.useful.MyListFragment;
 import com.ivlup.profse.R;
 
 public class FragmentAllServicesEducation extends Fragment {

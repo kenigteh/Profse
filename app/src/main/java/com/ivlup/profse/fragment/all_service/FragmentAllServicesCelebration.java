@@ -10,10 +10,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.GridLayout;
 
-import com.ivlup.profse.MainActivity;
-import com.ivlup.profse.MyListFragment;
+import com.ivlup.profse.activity.MainActivity;
+import com.ivlup.profse.fragment.useful.MyListFragment;
 import com.ivlup.profse.R;
-import com.ivlup.profse.tools.FragmentListContractors;
+import com.ivlup.profse.contractor.FragmentListContractors;
 
 public class FragmentAllServicesCelebration extends Fragment {
 

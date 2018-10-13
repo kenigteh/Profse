@@ -128,5 +128,19 @@
         <string name="rules">Мы ценим Вас и Ваше время.\n Мы благодарны за установку данного Приложения. Будем признательны, если в процессе пользования Вы будете соблюдать несложные правила!\n 1.Регистрация:\n Для физических лиц - фамилия, имя, контактный номер телефона\n Для юридических лиц - название организации, ИНН, контактное лицо и номер телефона\n 2. Если Вы приобретаете услугу через наше Приложение, то имеете право на скидку (подробнее здесь: каждая услуга, оказанная через Приложение, имеет накопительную систему: от первичной - 3% до максимальной - 10%. По достижении максимальной скидки, клиент имеет право на подарок).\n 3. Наше Приложение не несет ответственности за качество предоставляемых услуг, кроме рубрик с оформлением заявки (мы проверяем добросовестность исполнения лично)\n 4. Все вопросы по сотрудничеству, работе Приложения и пожелания можно отправить на e-mail: info_profse@mail.ru </string>
 
 
-
+    <!-- Sign-in status messages -->
+    <string name="signed_in_fmt">Signed in as: %s</string>
+    <string name="signed_in">Signed in</string>
+    <string name="signing_in">Signing in…</string>
+    <string name="signed_out">Signed out</string>
+    <string name="signed_in_err">"Error: please check logs."</string>
+    <string name="error_null_person">
+        Error: Plus.PeopleApi.getCurrentPerson returned null. Ensure that the Google+ API is
+        enabled for your project, you have a properly configured google-services.json file
+        and that your device has an internet connection.
+    </string>
+    <string name="loading">Loading…</string>
+    <string name="auth_code_fmt">Auth Code: %s</string>
+    <string name="id_token_fmt">ID Token: %s</string>
+    <string name="server_client_id">828688083986-uov1kqnqlkcrl2i1vl6eejnu0rmk36fn.apps.googleusercontent.com</string>
     </resources>
