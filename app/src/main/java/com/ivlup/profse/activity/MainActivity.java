@@ -20,6 +20,7 @@ import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.ivlup.profse.fragment.FragmentCategoryCards;
 import com.ivlup.profse.fragment.useful.FragmentMenu;
 import com.ivlup.profse.R;
 import com.ivlup.profse.backend.User;
@@ -43,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
     public static FragmentTransaction ft;
     private       DatabaseHelper mDBHelper;
     private       SQLiteDatabase mDb;
-    private       Fragment FragmentMenu;
+    private       Fragment FragmentCategoryCards;
     private       DrawerLayout mDrawerLayout;
     public        FrameLayout frame;
 
@@ -107,8 +108,8 @@ public class MainActivity extends AppCompatActivity {
         if (savedInstanceState == null) {
             fm = getSupportFragmentManager();
             ft = fm.beginTransaction();
-                    FragmentMenu = new FragmentMenu();
-                    ft.add(R.id.fragment_container, FragmentMenu, "detail");
+                    FragmentCategoryCards = new FragmentCategoryCards();
+                    ft.add(R.id.fragment_container, FragmentCategoryCards, "detail");
                     ft.commit();
 
                    // ft.addToBackStack(null);
