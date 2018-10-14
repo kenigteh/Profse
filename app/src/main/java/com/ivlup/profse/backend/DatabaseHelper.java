@@ -13,7 +13,7 @@ import java.io.OutputStream;
 
 public class DatabaseHelper extends SQLiteOpenHelper {
     private static String DB_NAME = "clients.db";
-    private static String DB_PATH = "";
+    private static String DB_PATH = " ";
     private static final int DB_VERSION = 3;
 
     private SQLiteDatabase mDataBase;

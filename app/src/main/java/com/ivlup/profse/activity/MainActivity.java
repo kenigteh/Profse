@@ -173,7 +173,6 @@ public class MainActivity extends AppCompatActivity {
                     cursor.getString(7),
                     cursor.getString(8),
                     cursor.getString(9));
-//ARTJEM PIDOR
             contractors.add(contractor);
             contractorCategories.add(contractor.getCategory());
             mapContractors.put(contractor.getName(), contractor);

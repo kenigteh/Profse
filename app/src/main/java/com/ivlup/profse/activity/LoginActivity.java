@@ -1,6 +1,12 @@
 package com.ivlup.profse.activity;
 
+import android.content.Context;
 import android.content.Intent;
+import android.database.Cursor;
+import android.database.SQLException;
+import android.database.sqlite.SQLiteDatabase;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -23,6 +29,8 @@ import com.ivlup.profse.R;
 import com.ivlup.profse.activity.MainActivity;
 import com.ivlup.profse.backend.Answer;
 import com.ivlup.profse.backend.DB;
+import com.ivlup.profse.backend.Data;
+import com.ivlup.profse.backend.DatabaseHelper;
 import com.ivlup.profse.backend.User;
 
 import org.json.JSONException;
@@ -49,6 +57,51 @@ public class LoginActivity extends AppCompatActivity implements
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         AppCompatDelegate.setCompatVectorFromResourcesEnabled(true);
+
+
+        ConnectivityManager cm =
+                (ConnectivityManager) this.getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo netInfo = cm.getActiveNetworkInfo();
+        if (netInfo != null && netInfo.isConnectedOrConnecting()) {
+
+            Retrofit retrofit = new Retrofit.Builder()
+                    .baseUrl("http://www.profse.pro/")
+                    .addConverterFactory(GsonConverterFactory.create(new GsonBuilder().setLenient().create()))
+                    .build();
+
+            DB request = retrofit.create(DB.class);
+
+            request.update().enqueue(new Callback<Answer>() {
+                @Override
+                public void onResponse(@NonNull Call<Answer> call, @NonNull Response<Answer> response) {
+                    if (response.body() != null) {
+                        Data.setContractors(response.body().contractors);
+                        Data.setLinks(response.body().links);
+                        Data.setCategories(response.body().categories);
+                    }
+                    else {
+                        Log.i("MyLog","Какого хуя он пустой!?");
+                    }
+                }
+
+                @Override
+                public void onFailure(@NonNull Call<Answer> call, @NonNull Throwable t) {
+                    Log.i("MyLog","Change = " + t.getMessage());
+                }
+            });
+
+            DatabaseHelper mDBHelper = new DatabaseHelper(this);
+            mDBHelper.updateDataBase();
+            SQLiteDatabase mDb;
+            try {
+                mDb = mDBHelper.getWritableDatabase();
+            } catch (SQLException mSQLException) {
+                throw mSQLException;
+            }
+            //mDb.rawQuery("SELECT * FROM new_clients", null);
+        }
+
+
 
         mStatusTextView = findViewById(R.id.status);
 
