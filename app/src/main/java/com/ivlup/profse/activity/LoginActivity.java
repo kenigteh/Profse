@@ -81,6 +81,7 @@ public class LoginActivity extends AppCompatActivity implements
                 @Override
                 public void onResponse(@NonNull Call<Answer> call, @NonNull Response<Answer> response) {
                     if (response.body() != null) {
+                        Log.i("Test", "Tewqd");
                         Data.setContractors(response.body().сontractors);
                         Data.setLinks(response.body().links);
                         Data.setCategories(response.body().categories);
@@ -250,15 +251,34 @@ public class LoginActivity extends AppCompatActivity implements
                 }
             });
 
-
-            Intent intent = new Intent(this, MainActivity.class);
-            startActivity(intent);
-
-            finish();
-
+            final Thread thread = new Thread(new Runnable() {
+                @Override
+                public void run() {
+                    while (true) {
+                        if (Data.getContractors() != null) {
+                            next();
+                            break;
+                        } else {
+                            try {
+                                Thread.sleep(1000);
+                            } catch (InterruptedException e) {
+                                e.printStackTrace();
+                            }
+                        }
+                    }
+                }
+            });
+            thread.setDaemon(true);
+            thread.start();
         } else {
             mStatusTextView.setText(R.string.signed_out);
             Toast.makeText(getApplicationContext(), "Ошибка во время авторизации, повторите попытку позднее.", Toast.LENGTH_LONG).show();
         }
+    }
+    void next(){
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+
+        finish();
     }
 }
