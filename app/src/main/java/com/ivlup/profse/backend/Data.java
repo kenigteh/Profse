@@ -1,16 +1,19 @@
 package com.ivlup.profse.backend;
 
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+
 public class Data {
-    private static Contractor []contractors;
+    private static Contractor []сontractors;
     private static Links []links;
     private static Category []categories;
 
     public static Contractor[] getContractors() {
-        return contractors;
+        return сontractors;
     }
 
     public static void setContractors(Contractor[] contractors) {
-        Data.contractors = contractors;
+        Data.сontractors = contractors;
     }
 
     public static Links[] getLinks() {
