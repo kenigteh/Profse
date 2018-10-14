@@ -93,7 +93,7 @@ public class FragmentCategoryCards extends Fragment {
 
             cur.add(Data.getCategories()[i].name);                //0
             cur.add(String.valueOf(Data.getCategories()[i].id));  //1
-            cur.add(Data.getCategories()[i].parent_id);           //2
+            cur.add(String.valueOf(Data.getCategories()[i].parent_id));           //2
             cur.add(Data.getCategories()[i].photo);               //3
             cur.add(String.valueOf(Data.getCategories()[i].type));//4
 

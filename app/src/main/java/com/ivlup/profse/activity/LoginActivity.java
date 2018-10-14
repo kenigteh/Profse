@@ -28,13 +28,19 @@ import com.google.gson.GsonBuilder;
 import com.ivlup.profse.R;
 import com.ivlup.profse.activity.MainActivity;
 import com.ivlup.profse.backend.Answer;
+import com.ivlup.profse.backend.Category;
+import com.ivlup.profse.backend.Contractor;
 import com.ivlup.profse.backend.DB;
 import com.ivlup.profse.backend.Data;
 import com.ivlup.profse.backend.DatabaseHelper;
+import com.ivlup.profse.backend.Links;
 import com.ivlup.profse.backend.User;
 
 import org.json.JSONException;
 import org.json.JSONObject;
+
+import java.util.ArrayList;
+import java.util.Arrays;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -75,9 +81,10 @@ public class LoginActivity extends AppCompatActivity implements
                 @Override
                 public void onResponse(@NonNull Call<Answer> call, @NonNull Response<Answer> response) {
                     if (response.body() != null) {
-                        Data.setContractors(response.body().contractors);
+                        Data.setContractors(response.body().сontractors);
                         Data.setLinks(response.body().links);
                         Data.setCategories(response.body().categories);
+                        localUpdate();
                     }
                     else {
                         Log.i("MyLog","Какого хуя он пустой!?");
@@ -86,19 +93,12 @@ public class LoginActivity extends AppCompatActivity implements
 
                 @Override
                 public void onFailure(@NonNull Call<Answer> call, @NonNull Throwable t) {
-                    Log.i("MyLog","Change = " + t.getMessage());
+                    Log.i("MyLog","Error = " + t.getMessage());
                 }
             });
+        }
+        else{
 
-            DatabaseHelper mDBHelper = new DatabaseHelper(this);
-            mDBHelper.updateDataBase();
-            SQLiteDatabase mDb;
-            try {
-                mDb = mDBHelper.getWritableDatabase();
-            } catch (SQLException mSQLException) {
-                throw mSQLException;
-            }
-            //mDb.rawQuery("SELECT * FROM new_clients", null);
         }
 
 
@@ -119,6 +119,60 @@ public class LoginActivity extends AppCompatActivity implements
         findViewById(R.id.sign_in_button).setOnClickListener(this);
     }
 
+    String pretty(String s){
+        StringBuilder ans = new StringBuilder();
+        for (int i = 0; i < s.length(); i++){
+            if (s.charAt(i) == '"'){
+                ans.append("\n");
+            }
+            else {
+                ans.append(s.charAt(i));
+            }
+        }
+        return ans.toString();
+    }
+
+    void localUpdate(){
+        if (Data.getCategories().length > 0){
+            DatabaseHelper mDBHelper = new DatabaseHelper(this);
+            mDBHelper.updateDataBase();
+            SQLiteDatabase mDb;
+            try {
+                mDb = mDBHelper.getWritableDatabase();
+            } catch (SQLException mSQLException) {
+                throw mSQLException;
+            }
+            mDb.rawQuery("DELETE FROM categories", null);
+            StringBuilder sql1 = new StringBuilder("INSERT INTO `categories`(`id`, `name`, `photo`, `parent_id`, `type`) VALUES ");
+            for (Category cat:
+                 Data.getCategories()) {
+                sql1.append("(");
+                sql1.append(cat.id).append(",\"").append(pretty(cat.name)).append("\",\"").append(pretty(cat.photo)).append("\",").append(cat.parent_id).append(",").append(cat.type);
+                sql1.append("),");
+            }
+            mDb.rawQuery(sql1.toString().substring(0, sql1.toString().length()-1), null);
+
+            mDb.rawQuery("DELETE FROM links", null);
+            StringBuilder sql2 = new StringBuilder("INSERT INTO `links`(`id`, `contactor_id`, `category_id`) VALUES ");
+            for (Links link:
+                    Data.getLinks()) {
+                sql2.append("(");
+                sql2.append(link.id).append(",").append(link.contactor_id).append(",").append(link.category_id);
+                sql2.append("),");
+            }
+            mDb.rawQuery(sql2.toString().substring(0, sql2.toString().length()-1), null);
+
+            mDb.rawQuery("DELETE FROM сontractors", null);
+            StringBuilder sql3 = new StringBuilder("INSERT INTO `сontractors`(`id`, `name`, `info`, `phone`, `address`, `site`, `vk`, `facebook`, `instagram`, `twitter`) VALUES ");
+            for (Contractor cont:
+                    Data.getContractors()) {
+                sql3.append("(");
+                sql3.append(cont.id).append(",\"").append(pretty(cont.name)).append("\",\"").append(pretty(cont.info)).append("\",\"").append(pretty(cont.phone)).append("\",\"").append(pretty(cont.address)).append("\",\"").append(pretty(cont.site)).append("\",\"").append(pretty(cont.vk)).append("\",\"").append(pretty(cont.facebook)).append("\",\"").append(pretty(cont.instagram)).append("\",\"").append(pretty(cont.twitter)).append("\"");
+                sql3.append("),");
+            }
+            mDb.rawQuery(sql3.toString().substring(0, sql3.toString().length()-1), null);
+        }
+    }
 
     @Override
     public void onClick(View v) {
