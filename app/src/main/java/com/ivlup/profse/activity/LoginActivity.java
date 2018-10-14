@@ -28,6 +28,7 @@ import com.google.gson.GsonBuilder;
 import com.ivlup.profse.R;
 import com.ivlup.profse.activity.MainActivity;
 import com.ivlup.profse.backend.Answer;
+import com.ivlup.profse.backend.Contractor;
 import com.ivlup.profse.backend.DB;
 import com.ivlup.profse.backend.Data;
 import com.ivlup.profse.backend.DatabaseHelper;
@@ -79,6 +80,7 @@ public class LoginActivity extends AppCompatActivity implements
                         Data.setLinks(response.body().links);
                         Data.setCategories(response.body().categories);
                     }
+
                     else {
                         Log.i("MyLog","Какого хуя он пустой!?");
                     }

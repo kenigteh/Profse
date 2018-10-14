@@ -108,7 +108,7 @@ public class MainActivity extends AppCompatActivity {
         if (savedInstanceState == null) {
             fm = getSupportFragmentManager();
             ft = fm.beginTransaction();
-                    FragmentCategoryCards = new FragmentCategoryCards();
+                        FragmentCategoryCards = new FragmentCategoryCards();
                     ft.add(R.id.fragment_container, FragmentCategoryCards, "detail");
                     ft.commit();
 

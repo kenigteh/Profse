@@ -1,9 +1,11 @@
 package com.ivlup.profse.backend;
 
+import java.util.ArrayList;
+
 public class Data {
-    private static Contractor []contractors;
-    private static Links []links;
-    private static Category []categories;
+    private static Contractor contractors[];
+    private static Links      links[];
+    private static Category   categories[];
 
     public static Contractor[] getContractors() {
         return contractors;
