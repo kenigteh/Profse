@@ -104,6 +104,7 @@ public class MainActivity extends AppCompatActivity {
         } catch (SQLException mSQLException) {
             throw mSQLException;
         }
+
         if (savedInstanceState == null) {
             fm = getSupportFragmentManager();
             ft = fm.beginTransaction();
@@ -154,7 +155,7 @@ public class MainActivity extends AppCompatActivity {
                 });
     }
 
-    /*private void fetchClients() {
+   /* private void fetchClients() {
 
 
         Cursor cursor = mDb.rawQuery("SELECT * FROM new_clients", null);
@@ -180,4 +181,5 @@ public class MainActivity extends AppCompatActivity {
             cursor.moveToNext();
         }
     }*/
+
 }

@@ -146,7 +146,7 @@ public class LoginActivity extends AppCompatActivity implements
             mDb.rawQuery("DELETE FROM categories", null);
             StringBuilder sql1 = new StringBuilder("INSERT INTO `categories`(`id`, `name`, `photo`, `parent_id`, `type`) VALUES ");
             for (Category cat:
-                 Data.getCategories()) {
+                    Data.getCategories()) {
                 sql1.append("(");
                 sql1.append(cat.id).append(",\"").append(pretty(cat.name)).append("\",\"").append(pretty(cat.photo)).append("\",").append(cat.parent_id).append(",").append(cat.type);
                 sql1.append("),");
