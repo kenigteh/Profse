@@ -2,7 +2,7 @@ package com.ivlup.profse.backend;
 
 public class Contractor {
 
-    public String id;
+    public int id;
     public String name;
     public String info;
     public String phone;

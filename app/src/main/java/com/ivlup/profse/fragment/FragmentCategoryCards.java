@@ -23,7 +23,7 @@ import java.util.List;
 public class FragmentCategoryCards extends Fragment {
     RecyclerView rvMain;
 
-    ArrayList <ArrayList <String> > allCategories;
+    ArrayList <ArrayList <String> > allCategories = new ArrayList<>();
     ArrayList <AssetCategory> currentCategory = new ArrayList<>();
 
     public static int globalParentId = 0;
@@ -50,14 +50,14 @@ public class FragmentCategoryCards extends Fragment {
         if (allCategories.isEmpty()) fetchCategories();
 
         for (int i = 0; i < allCategories.size(); i++) {
-            if (allCategories.get(i).get(2).equals(globalParentId)) {
+            if (Integer.valueOf(allCategories.get(i).get(2)).equals(globalParentId)) {
 
                 AssetCategory ass = new AssetCategory(
                         Integer.valueOf(allCategories.get(i).get(1)),
-                        allCategories.get(i).get(2),
+                        allCategories.get(i).get(0),
                         allCategories.get(i).get(3),
-                        allCategories.get(i).get(4),
-                        Integer.valueOf(allCategories.get(i).get(5))
+                        Integer.valueOf(allCategories.get(i).get(2)),
+                        Integer.valueOf(allCategories.get(i).get(4))
                 );
 
                 currentCategory.add(ass);
@@ -87,15 +87,15 @@ public class FragmentCategoryCards extends Fragment {
 
     private void fetchCategories () {
 
-        for (int i = 0; i < Data.getCategories().length; i++) {
+        for (int i = 0; i < Data.getCategories().size(); i++) {
 
             ArrayList<String> cur = new ArrayList<>();
 
-            cur.add(Data.getCategories()[i].name);                //0
-            cur.add(String.valueOf(Data.getCategories()[i].id));  //1
-            cur.add(String.valueOf(Data.getCategories()[i].parent_id));           //2
-            cur.add(Data.getCategories()[i].photo);               //3
-            cur.add(String.valueOf(Data.getCategories()[i].type));//4
+            cur.add(Data.getCategories().get(i).name);                //0
+            cur.add(String.valueOf(Data.getCategories().get(i).id));  //1
+            cur.add(String.valueOf(Data.getCategories().get(i).parent_id));           //2
+            cur.add(Data.getCategories().get(i).photo);               //3
+            cur.add(String.valueOf(Data.getCategories().get(i).type));//4
 
             allCategories.add(cur);
         }

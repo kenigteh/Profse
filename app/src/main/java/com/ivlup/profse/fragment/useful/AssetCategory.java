@@ -4,10 +4,10 @@ public class AssetCategory {
     private int id;
     private String name;
     private String photo;
-    private String parent_id;
+    private int parent_id;
     private int type;
 
-    public AssetCategory(int id, String name, String photo, String parent_id, int type) {
+    public AssetCategory(int id, String name, String photo, int parent_id, int type) {
         this.id = id;
         this.name = name;
         this.photo = photo;
@@ -27,7 +27,7 @@ public class AssetCategory {
         return photo;
     }
 
-    public String getParent_id() {
+    public int getParent_id() {
         return parent_id;
     }
 

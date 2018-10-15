@@ -1,5 +1,6 @@
 package com.ivlup.profse.activity;
 
+import android.content.ContentValues;
 import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
@@ -26,18 +27,14 @@ import com.google.android.gms.common.api.ApiException;
 import com.google.android.gms.tasks.Task;
 import com.google.gson.GsonBuilder;
 import com.ivlup.profse.R;
-import com.ivlup.profse.activity.MainActivity;
 import com.ivlup.profse.backend.Answer;
 import com.ivlup.profse.backend.Category;
 import com.ivlup.profse.backend.Contractor;
 import com.ivlup.profse.backend.DB;
 import com.ivlup.profse.backend.Data;
 import com.ivlup.profse.backend.DatabaseHelper;
-import com.ivlup.profse.backend.Links;
+import com.ivlup.profse.backend.Link;
 import com.ivlup.profse.backend.User;
-
-import org.json.JSONException;
-import org.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -82,9 +79,9 @@ public class LoginActivity extends AppCompatActivity implements
                 public void onResponse(@NonNull Call<Answer> call, @NonNull Response<Answer> response) {
                     if (response.body() != null) {
                         Log.i("Test", "Tewqd");
-                        Data.setContractors(response.body().сontractors);
-                        Data.setLinks(response.body().links);
-                        Data.setCategories(response.body().categories);
+                        Data.setContractors(new ArrayList<>(Arrays.asList(response.body().сontractors)));
+                        Data.setLinks(new ArrayList<>(Arrays.asList(response.body().links)));
+                        Data.setCategories(new ArrayList<>(Arrays.asList(response.body().categories)));
                         localUpdate();
                     }
                     else {
@@ -99,7 +96,70 @@ public class LoginActivity extends AppCompatActivity implements
             });
         }
         else{
+            DatabaseHelper mDBHelper = new DatabaseHelper(this);
+            mDBHelper.updateDataBase();
+            SQLiteDatabase mDb;
+            try {
+                mDb = mDBHelper.getWritableDatabase();
+            } catch (SQLException mSQLException) {
+                throw mSQLException;
+            }
 
+            String sql1 = "SELECT * FROM сontractors";
+            String sql2 = "SELECT * FROM links";
+            String sql3 = "SELECT * FROM categories";
+
+            Cursor cursor1 = mDb.rawQuery(sql1, null);
+            cursor1.moveToFirst();
+            ArrayList<Contractor> contractors = new ArrayList<>();
+            while (!cursor1.isAfterLast()) {
+                Contractor contractor = new Contractor();
+                contractor.id = Integer.valueOf(cursor1.getString(0));
+                contractor.name = cursor1.getString(1);
+                contractor.info = cursor1.getString(2);
+                contractor.phone = cursor1.getString(3);
+                contractor.address = cursor1.getString(4);
+                contractor.site = cursor1.getString(5);
+                contractor.vk = cursor1.getString(6);
+                contractor.facebook = cursor1.getString(7);
+                contractor.twitter = cursor1.getString(8);
+                contractor.instagram = cursor1.getString(9);
+                contractors.add(contractor);
+
+                cursor1.moveToNext();
+            }
+            Data.setContractors(contractors);
+
+            Cursor cursor2 = mDb.rawQuery(sql2, null);
+            cursor2.moveToFirst();
+            ArrayList<Link> links = new ArrayList<>();
+            while (!cursor2.isAfterLast()) {
+                Link link = new Link();
+                link.id = Integer.valueOf(cursor2.getString(0));
+                link.contactor_id = Integer.valueOf(cursor2.getString(1));
+                link.category_id = Integer.valueOf(cursor2.getString(2));
+                links.add(link);
+
+                cursor2.moveToNext();
+            }
+            Data.setLinks(links);
+
+            Cursor cursor3 = mDb.rawQuery(sql3, null);
+            cursor3.moveToFirst();
+            ArrayList<Category> categories = new ArrayList<>();
+            while (!cursor3.isAfterLast()) {
+                Category category = new Category();
+                category.id = Integer.valueOf(cursor3.getString(0));
+                category.name = cursor3.getString(1);
+                category.photo = cursor3.getString(2);
+                category.parent_id = Integer.valueOf(cursor3.getString(3));
+                category.type = Integer.valueOf(cursor3.getString(4));
+
+                categories.add(category);
+
+                cursor3.moveToNext();
+            }
+            Data.setCategories(categories);
         }
 
 
@@ -134,44 +194,61 @@ public class LoginActivity extends AppCompatActivity implements
     }
 
     void localUpdate(){
-        if (Data.getCategories().length > 0){
+        if (Data.getCategories().size() > 0){
             DatabaseHelper mDBHelper = new DatabaseHelper(this);
-            mDBHelper.updateDataBase();
             SQLiteDatabase mDb;
             try {
                 mDb = mDBHelper.getWritableDatabase();
             } catch (SQLException mSQLException) {
                 throw mSQLException;
             }
-            mDb.rawQuery("DELETE FROM categories", null);
-            StringBuilder sql1 = new StringBuilder("INSERT INTO `categories`(`id`, `name`, `photo`, `parent_id`, `type`) VALUES ");
+
+            mDb.delete("categories", null, null);
             for (Category cat:
-                 Data.getCategories()) {
-                sql1.append("(");
-                sql1.append(cat.id).append(",\"").append(pretty(cat.name)).append("\",\"").append(pretty(cat.photo)).append("\",").append(cat.parent_id).append(",").append(cat.type);
-                sql1.append("),");
-            }
-            mDb.rawQuery(sql1.toString().substring(0, sql1.toString().length()-1), null);
+                    Data.getCategories()) {
+                ContentValues insertValues1 = new ContentValues();
 
-            mDb.rawQuery("DELETE FROM links", null);
-            StringBuilder sql2 = new StringBuilder("INSERT INTO `links`(`id`, `contactor_id`, `category_id`) VALUES ");
-            for (Links link:
+                insertValues1.put("id", cat.id);
+                insertValues1.put("name", cat.name);
+                insertValues1.put("photo", cat.photo);
+                insertValues1.put("parent_id", cat.parent_id);
+                insertValues1.put("type", cat.type);
+
+                mDb.insert("categories", null, insertValues1);
+            }
+
+            mDb.delete("links", null, null);
+            for (Link link:
                     Data.getLinks()) {
-                sql2.append("(");
-                sql2.append(link.id).append(",").append(link.contactor_id).append(",").append(link.category_id);
-                sql2.append("),");
-            }
-            mDb.rawQuery(sql2.toString().substring(0, sql2.toString().length()-1), null);
+                ContentValues insertValues2 = new ContentValues();
 
-            mDb.rawQuery("DELETE FROM сontractors", null);
-            StringBuilder sql3 = new StringBuilder("INSERT INTO `сontractors`(`id`, `name`, `info`, `phone`, `address`, `site`, `vk`, `facebook`, `instagram`, `twitter`) VALUES ");
+                insertValues2.put("id", link.id);
+                insertValues2.put("contactor_id", link.contactor_id);
+                insertValues2.put("category_id", link.category_id);
+
+                mDb.insert("links", null, insertValues2);
+            }
+
+            mDb.delete("сontractors", null, null);
             for (Contractor cont:
                     Data.getContractors()) {
-                sql3.append("(");
-                sql3.append(cont.id).append(",\"").append(pretty(cont.name)).append("\",\"").append(pretty(cont.info)).append("\",\"").append(pretty(cont.phone)).append("\",\"").append(pretty(cont.address)).append("\",\"").append(pretty(cont.site)).append("\",\"").append(pretty(cont.vk)).append("\",\"").append(pretty(cont.facebook)).append("\",\"").append(pretty(cont.instagram)).append("\",\"").append(pretty(cont.twitter)).append("\"");
-                sql3.append("),");
+                ContentValues insertValues3 = new ContentValues();
+
+                insertValues3.put("id", cont.id);
+                insertValues3.put("name", cont.name);
+                insertValues3.put("info", cont.info);
+                insertValues3.put("phone", cont.phone);
+                insertValues3.put("address", cont.address);
+                insertValues3.put("site", cont.site);
+                insertValues3.put("vk", cont.vk);
+                insertValues3.put("facebook", cont.facebook);
+                insertValues3.put("instagram", cont.instagram);
+                insertValues3.put("twitter", cont.twitter);
+
+                mDb.insert("сontractors", null, insertValues3);
+
             }
-            mDb.rawQuery(sql3.toString().substring(0, sql3.toString().length()-1), null);
+            mDb.close();
         }
     }
 
@@ -255,7 +332,7 @@ public class LoginActivity extends AppCompatActivity implements
                 @Override
                 public void run() {
                     while (true) {
-                        if (Data.getContractors() != null) {
+                        if (Data.getCategories() != null) {
                             next();
                             break;
                         } else {

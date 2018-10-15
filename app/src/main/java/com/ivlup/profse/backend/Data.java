@@ -1,31 +1,34 @@
 package com.ivlup.profse.backend;
 
-public class Data {
-    private static Contractor []contractors;
-    private static Links []links;
-    private static Category []categories;
+import java.util.ArrayList;
 
-    public static Contractor[] getContractors() {
+public class Data {
+    private static ArrayList<Contractor> contractors;
+    private static ArrayList<Link> links;
+    private static ArrayList<Category> categories;
+
+
+    public static ArrayList<Contractor> getContractors() {
         return contractors;
     }
 
-    public static void setContractors(Contractor[] contractors) {
+    public static void setContractors(ArrayList<Contractor> contractors) {
         Data.contractors = contractors;
     }
 
-    public static Links[] getLinks() {
+    public static ArrayList<Link> getLinks() {
         return links;
     }
 
-    public static void setLinks(Links[] links) {
+    public static void setLinks(ArrayList<Link> links) {
         Data.links = links;
     }
 
-    public static Category[] getCategories() {
+    public static ArrayList<Category> getCategories() {
         return categories;
     }
 
-    public static void setCategories(Category[] categories) {
+    public static void setCategories(ArrayList<Category> categories) {
         Data.categories = categories;
     }
 }
