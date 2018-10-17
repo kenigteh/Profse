@@ -148,12 +148,14 @@ public class LoginActivity extends AppCompatActivity implements
             cursor3.moveToFirst();
             ArrayList<Category> categories = new ArrayList<>();
             while (!cursor3.isAfterLast()) {
-                Category category = new Category();
-                category.id = Integer.valueOf(cursor3.getString(0));
-                category.name = cursor3.getString(1);
-                category.photo = cursor3.getString(2);
-                category.parent_id = Integer.valueOf(cursor3.getString(3));
-                category.type = Integer.valueOf(cursor3.getString(4));
+                Category category = new Category(
+                        Integer.valueOf(cursor3.getString(0)) ,
+                        cursor3.getString(1),
+                        cursor3.getString(2),
+                        Integer.valueOf(cursor3.getString(3)),
+                        Integer.valueOf(cursor3.getString(4))
+                );
+
 
                 categories.add(category);
 
@@ -208,11 +210,11 @@ public class LoginActivity extends AppCompatActivity implements
                     Data.getCategories()) {
                 ContentValues insertValues1 = new ContentValues();
 
-                insertValues1.put("id", cat.id);
-                insertValues1.put("name", cat.name);
-                insertValues1.put("photo", cat.photo);
-                insertValues1.put("parent_id", cat.parent_id);
-                insertValues1.put("type", cat.type);
+                insertValues1.put("id", cat.getId());
+                insertValues1.put("name", cat.getName());
+                insertValues1.put("photo", cat.getPhoto());
+                insertValues1.put("parent_id", cat.getParent_id());
+                insertValues1.put("type", cat.getType());
 
                 mDb.insert("categories", null, insertValues1);
             }

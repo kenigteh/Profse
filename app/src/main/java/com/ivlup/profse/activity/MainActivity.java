@@ -1,31 +1,32 @@
 package com.ivlup.profse.activity;
 
 import android.content.Intent;
-import android.database.Cursor;
 import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
-import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatDelegate;
-import android.view.MenuItem;
+import android.util.Log;
 import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.ivlup.profse.backend.Category;
+import com.ivlup.profse.backend.Data;
 import com.ivlup.profse.fragment.FragmentCategoryCards;
-import com.ivlup.profse.fragment.useful.FragmentMenu;
 import com.ivlup.profse.R;
 import com.ivlup.profse.backend.User;
 import com.ivlup.profse.contractor.Contractor;
 import com.ivlup.profse.backend.DatabaseHelper;
+
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -37,8 +38,9 @@ public class MainActivity extends AppCompatActivity {
     public static String chosen;
     public static String chosenClient;
     public static String chosenName;
+
     public static ArrayList<Contractor> contractors = new ArrayList();
-    public static ArrayList<String> contractorCategories = new ArrayList();
+
 
     public static FragmentManager fm;
     public static FragmentTransaction ft;
@@ -132,54 +134,17 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        navigationView.setNavigationItemSelectedListener(
-                new NavigationView.OnNavigationItemSelectedListener() {
-                    @Override
-                    public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
-                        // set item as selected to persist highlight
 
-                        int id = menuItem.getItemId();
-                        mDrawerLayout.closeDrawers();
-
-                        menuItem.setChecked(true);
-                        if (id == R.id.nav_menu) {
-                            fm = getSupportFragmentManager();
-                            ft = fm.beginTransaction();
-                            ft.replace(R.id.fragment_container, new FragmentMenu());
-                            ft.commit();
-
-                        }
-
-                        return true;
-                    }
-                });
     }
 
-   /* private void fetchClients() {
+    public static void updateAdapter () {
+
+      //
 
 
-        Cursor cursor = mDb.rawQuery("SELECT * FROM new_clients", null);
-        cursor.moveToFirst();
-        while (!cursor.isAfterLast()) {
 
-            Contractor contractor = new Contractor(
 
-                    cursor.getString(0),
-                    cursor.getString(1),
-                    cursor.getString(2),
-                    cursor.getString(3),
-                    cursor.getString(4),
-                    cursor.getString(5),
-                    cursor.getString(6),
-                    cursor.getString(7),
-                    cursor.getString(8),
-                    cursor.getString(9));
-            contractors.add(contractor);
-            contractorCategories.add(contractor.getCategory());
-            mapContractors.put(contractor.getName(), contractor);
-
-            cursor.moveToNext();
-        }
-    }*/
-
+        //getSupportFragmentManager().beginTransaction().detach(FragmentCategoryCards).commitNowAllowingStateLoss();
+        //getSupportFragmentManager().beginTransaction().attach(FragmentCategoryCards).commitAllowingStateLoss();
+    }
 }
